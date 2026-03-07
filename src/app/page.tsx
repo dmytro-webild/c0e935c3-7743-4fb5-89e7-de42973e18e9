@@ -103,10 +103,7 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground={false}
           names={[
-            "Brandon Clark",            "Sexyishaan",            "Ericcouu",            "Brandon Clark",            "Sexyishaan",            "Ericcouu",            "Hostage Tape - Customers",            "Brandon Clark"
-          ]}
-          logos={[
-            "600K Followers",            "60K Followers",            "300K Followers",            "600K Followers",            "60K Followers",            "300K Followers",            "Customers",            "600K Followers"
+            "Brandon Clark 600K Followers",            "Sexyishaan 60K Followers",            "Ericcouu 300K Followers",            "Brandon Clark 600K Followers",            "Sexyishaan 60K Followers",            "Ericcouu 300K Followers",            "Brandon Clark 600K Followers",            "Sexyishaan 60K Followers"
           ]}
           speed={40}
           showCard={true}
