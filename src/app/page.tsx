@@ -75,7 +75,7 @@ export default function LandingPage() {
           ]}
           rightCarouselItems={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg",              imageAlt: "YouTube Shorts content"
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg?_wi=1",              imageAlt: "YouTube Shorts content"
             },
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-mr1xedhd.jpg?_wi=2",              imageAlt: "Trending clips montage"
@@ -180,7 +180,7 @@ export default function LandingPage() {
               id: "dhar-mann",              name: "Brandon Clark - Gym Coach",              price: "",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-mr1xedhd.jpg",              imageAlt: "Brandon Clark success story"
             },
             {
-              id: "paul-american",              name: "PB Investing - Trader",              price: "",              variant: "Followers | Trading Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg",              imageAlt: "PB Investing success story"
+              id: "paul-american",              name: "PB Investing - Trader",              price: "",              variant: "Followers | Trading Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg?_wi=2",              imageAlt: "PB Investing success story"
             },
             {
               id: "tate-mccrae",              name: "Sexyishaan - Influencer",              price: "",              variant: "Entertainment",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-1pjxjkc4.jpg",              imageAlt: "Sexyishaan success story"
