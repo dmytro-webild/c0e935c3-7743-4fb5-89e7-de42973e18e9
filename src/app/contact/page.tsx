@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleFullscreen from "@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen";
 import ContactForm from "@/components/form/ContactForm";
 import FooterCard from "@/components/sections/footer/FooterCard";
@@ -20,17 +20,19 @@ export default function ContactPage() {
       secondaryButtonStyle="glass"
       headingFontWeight="semibold"
     >
-      <NavbarStyleFullscreen
-        navItems={[
-          { name: "Home", id: "/" },
-          { name: "Features", id: "#features" },
-          { name: "About", id: "#about" },
-          { name: "Contact", id: "/contact" },
-        ]}
-        brandName="billiclipd"
-        bottomLeftText="Global Community"
-        bottomRightText="hello@example.com"
-      />
+      <div id="nav" data-section="nav">
+        <NavbarStyleFullscreen
+          navItems={[
+            { name: "Home", id: "/" },
+            { name: "Features", id: "#features" },
+            { name: "About", id: "#about" },
+            { name: "Contact", id: "/contact" },
+          ]}
+          brandName="billiclipd"
+          bottomLeftText="Global Community"
+          bottomRightText="hello@example.com"
+        />
+      </div>
 
       <div className="flex items-center justify-center min-h-screen py-20">
         <div className="w-full">
@@ -43,6 +45,7 @@ export default function ContactPage() {
             buttonText="Send Message"
             termsText="We'll get back to you within 24 hours."
             centered={true}
+            useInvertedBackground={false}
             onSubmit={(email) => console.log("Email:", email)}
           />
         </div>
@@ -54,10 +57,12 @@ export default function ContactPage() {
         socialLinks={[
           {
             icon: Twitter,
-            href: "https://twitter.com/billiclipd",            ariaLabel: "Twitter"},
+            href: "https://twitter.com/billiclipd",            ariaLabel: "Twitter"
+          },
           {
             icon: Linkedin,
-            href: "https://linkedin.com/company/billiclipd",            ariaLabel: "LinkedIn"},
+            href: "https://linkedin.com/company/billiclipd",            ariaLabel: "LinkedIn"
+          },
         ]}
       />
     </ThemeProvider>
