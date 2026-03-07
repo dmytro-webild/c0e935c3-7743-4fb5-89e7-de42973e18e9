@@ -41,7 +41,7 @@ export default function LandingPage() {
     >
       <div id="nav" data-section="nav">
         <NavbarLayoutFloatingOverlay
-          brandName="Clipping Culture"
+          brandName="billiclipd"
           navItems={[
             { name: "Case Studies", id: "case-studies" },
             { name: "About", id: "about" },
@@ -103,7 +103,7 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground={false}
           names={[
-            "Brandon Clark - 600K Followers",            "Sexyishaan - 60K Followers",            "Ericcouu - 300K Followers",            "Dhar Mann - 136M Followers",            "Paul American - 140M Followers",            "Tate McCrae - 57.6M Listeners",            "Hostage Tape - 150K Customers",            "The Rolling Stones - 27M Listeners"
+            "Brandon Clark - 600K Followers",            "Sexyishaan - 60K Followers",            "Ericcouu - 300K Followers",            "",            "",            "",            "Hostage Tape - Customers",            ""
           ]}
           speed={40}
           showCard={true}
@@ -291,7 +291,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterLogoEmphasis
-          logoText="Clipping Culture"
+          logoText="billiclipd  "
           columns={[
             {
               items: [
