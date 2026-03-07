@@ -118,7 +118,8 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Book an Intro Call",              description: "We start with a quick intro call to understand your goals, target audience, and creative direction. I build a custom clipping strategy designed to maximize reach and engagement—whether you're a brand, artist, creator, or product.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-a-consultation-v-1772847774769-61fe5500.png",              imageAlt: "Consultation call strategy planning"},
+              title: "Book an Intro Call",              description: "We start with a quick intro call to understand your goals, target audience, and creative direction. I build a custom clipping strategy designed to maximize reach and engagement—whether you're a brand, artist, creator, or product.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-a-consultation-v-1772847774769-61fe5500.png",              imageAlt: "Consultation call strategy planning",              buttons: [{ text: "Start Your Campaign", href: "https://calendly.com" }],
+            },
             {
               id: 2,
               title: "Clippers Start Posting",              description: "Once your campaign is locked in, our network springs into action. Content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"},
