@@ -1,108 +1,98 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
-import ContactText from "@/components/sections/contact/ContactText";
-import FooterCard from "@/components/sections/footer/FooterCard";
+import NavbarLayoutFloatingOverlay from "@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay";
+import FooterLogoEmphasis from "@/components/sections/footer/FooterLogoEmphasis";
+import { useEffect } from "react";
 
 export default function ContactPage() {
+  useEffect(() => {
+    const script = document.createElement("script");
+    script.src = "https://assets.calendly.com/assets/external/widget.js";
+    script.async = true;
+    document.body.appendChild(script);
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+
   return (
     <ThemeProvider
-      defaultButtonVariant="hover-magnetic"
+      defaultButtonVariant="bounce-effect"
       defaultTextAnimation="entrance-slide"
-      borderRadius="rounded"
+      borderRadius="pill"
       contentWidth="mediumLarge"
-      sizing="largeSmall"
-      background="aurora"
-      cardStyle="glass-elevated"
-      primaryButtonStyle="gradient"
-      secondaryButtonStyle="glass"
-      headingFontWeight="bold"
+      sizing="mediumSizeLargeTitles"
+      background="noise"
+      cardStyle="soft-shadow"
+      primaryButtonStyle="radial-glow"
+      secondaryButtonStyle="solid"
+      headingFontWeight="light"
     >
       <div id="nav" data-section="nav">
-        <NavbarStyleApple
+        <NavbarLayoutFloatingOverlay
+          brandName="billiclipd"
           navItems={[
-            { name: "Home", id: "/" },
+            { name: "Case Studies", id: "case-studies" },
             { name: "About", id: "about" },
-            { name: "Features", id: "features" },
-            { name: "Pricing", id: "pricing" },
+            { name: "Process", id: "process" },
             { name: "Contact", id: "/contact" },
           ]}
-          brandName="billiclipd"
+          button={{
+            text: "Book A Call",            href: "https://calendly.com"
+          }}
         />
       </div>
 
-      <div id="contact-hero" data-section="contact-hero" className="py-20">
-        <ContactText
-          text="Get in touch with our team. We'd love to hear about your content and discuss how we can help you go viral."
-          animationType="entrance-slide"
-          buttons={[
-            { text: "Schedule a Call", onClick: () => window.open("https://calendly.com/billiclipd", "_blank") },
-            { text: "Back to Home", href: "/" },
-          ]}
-          background={{ variant: "sparkles-gradient" }}
-          useInvertedBackground={false}
-        />
-      </div>
-
-      <div id="contact-form" data-section="contact-form" className="py-20">
+      <div className="min-h-screen pt-20 pb-20">
         <div className="flex flex-col items-center justify-center">
-          <div className="w-full max-w-2xl rounded-theme bg-card p-10">
-            <h2 className="mb-2 text-4xl font-bold text-foreground">Let's Connect</h2>
-            <p className="mb-8 text-lg text-foreground/75">
-              Fill out the form below or reach out directly. We typically respond within 24 hours.
-            </p>
-            <form className="space-y-6">
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Full Name
-                </label>
-                <input
-                  type="text"
-                  className="w-full px-4 py-3 rounded-theme border border-accent/20 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-cta"
-                  placeholder="Your name"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Email
-                </label>
-                <input
-                  type="email"
-                  className="w-full px-4 py-3 rounded-theme border border-accent/20 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-cta"
-                  placeholder="your@email.com"
-                />
-              </div>
-              <div>
-                <label className="block text-sm font-medium text-foreground mb-2">
-                  Message
-                </label>
-                <textarea
-                  rows={5}
-                  className="w-full px-4 py-3 rounded-theme border border-accent/20 bg-background text-foreground focus:outline-none focus:ring-2 focus:ring-primary-cta"
-                  placeholder="Tell us about your project..."
-                />
-              </div>
-              <button
-                type="submit"
-                className="w-full px-6 py-3 rounded-theme bg-primary-cta text-primary-cta-text font-semibold hover:opacity-90 transition-opacity"
-              >
-                Send Message
-              </button>
-            </form>
-            <p className="mt-8 text-center text-sm text-foreground/75">
-              Or schedule a call directly: billing@billiclipd.com
-            </p>
+          <div className="w-full max-w-4xl px-4 sm:px-6 lg:px-8">
+            <div className="text-center mb-12">
+              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
+                Schedule a Call With Me
+              </h1>
+              <p className="text-lg sm:text-xl text-foreground/70">
+                Book a time that works for you. Let's discuss your project and how I can help you turn your content into viral clips.
+              </p>
+            </div>
+
+            <div className="w-full bg-card rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
+              <div
+                className="calendly-inline-widget w-full h-screen min-h-[800px] sm:min-h-[900px] lg:min-h-[1000px]"
+                data-url="https://calendly.com/ibbiyousuf420/30min"
+              ></div>
+            </div>
           </div>
         </div>
       </div>
 
-      <footer>
-        <FooterCard
+      <div id="footer" data-section="footer">
+        <FooterLogoEmphasis
           logoText="billiclipd"
-          copyrightText="© 2025 | billiclipd. All rights reserved."
+          columns={[
+            {
+              items: [
+                { label: "Home", href: "/" },
+                { label: "Case Studies", href: "#case-studies" },
+                { label: "Process", href: "#process" },
+              ],
+            },
+            {
+              items: [
+                { label: "About", href: "#about" },
+                { label: "FAQ", href: "#faq" },
+              ],
+            },
+            {
+              items: [
+                { label: "Contact", href: "/contact" },
+                { label: "Book A Call", href: "https://calendly.com" },
+                { label: "Privacy Policy", href: "#" },
+              ],
+            },
+          ]}
         />
-      </footer>
+      </div>
     </ThemeProvider>
   );
 }
