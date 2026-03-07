@@ -5,19 +5,10 @@ import { Public_Sans } from "next/font/google";
 import "./globals.css";
 import { ServiceWrapper } from "@/components/ServiceWrapper";
 import Tag from "@/tag/Tag";
+import { Inter_Tight } from "next/font/google";
 
-const halant = Halant({
-  variable: "--font-halant",  subsets: ["latin"],
-  weight: ["300", "400", "500", "600", "700"],
-});
 
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
 
-const publicSans = Public_Sans({
-  variable: "--font-public-sans",  subsets: ["latin"],
-});
 
 export const metadata: Metadata = {
   title: "Private Clipping Services & Team Management | billiclipd",  description: "Transform your longform content into viral shortform clips with personalized team management. 10B+ views generated. TikTok, Reels, Shorts optimization with direct collaboration.",  keywords: "private clipping services, TikTok clips, viral growth, content repurposing, Instagram Reels, YouTube Shorts, dedicated team",  metadataBase: new URL("https://billiclipd.com"),
@@ -42,6 +33,12 @@ export const metadata: Metadata = {
   },
 };
 
+const interTight = Inter_Tight({
+  variable: "--font-inter-tight",
+  subsets: ["latin"],
+  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
+});
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -50,9 +47,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <ServiceWrapper>
-        <body
-          className={`${halant.variable} ${inter.variable} ${publicSans.variable} antialiased`}
-        >
+        <body className={`${interTight.variable} antialiased`}>
           <Tag />
           {children}
         
