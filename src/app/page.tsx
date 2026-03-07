@@ -7,7 +7,6 @@ import SocialProofOne from "@/components/sections/socialProof/SocialProofOne";
 import FeatureCardSix from "@/components/sections/feature/FeatureCardSix";
 import MetricCardOne from "@/components/sections/metrics/MetricCardOne";
 import TextSplitAbout from "@/components/sections/about/TextSplitAbout";
-import TestimonialCardTwo from "@/components/sections/testimonial/TestimonialCardTwo";
 import FaqBase from "@/components/sections/faq/FaqBase";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterLogoEmphasis from "@/components/sections/footer/FooterLogoEmphasis";
@@ -18,7 +17,6 @@ import {
   Zap,
   BarChart3,
   Trophy,
-  MessageSquare,
   HelpCircle,
   Eye,
   Users,
@@ -122,15 +120,15 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Step #1",              description: "Book an Intro Call. We start with a quick intro call to understand your goals, target audience, and creative direction. From there, my team builds a custom private clipping project designed to maximize reach and engagement — whether you're a brand, artist, creator, or product.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-a-consultation-v-1772847774769-61fe5500.png",              imageAlt: "Consultation call strategy planning",              buttons: [{ text: "Start Your Project", href: "https://calendly.com" }],
+              title: "Step #1",              description: "Book an Intro Call. We start with a quick intro call to understand your goals, target audience, and creative direction. From there, my team builds a custom private clipping project designed to maximize reach and engagement — whether you're a brand, artist, creator, or product.",              buttons: [{ text: "Start Your Project", href: "https://calendly.com" }],
             },
             {
               id: 2,
-              title: "Our Team Starts Posting",              description: "Once we align on strategy, personalized content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques. Direct team management ensures every clip reflects your brand's vision.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"
+              title: "Our Team Starts Posting",              description: "Once we align on strategy, personalized content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques. Direct team management ensures every clip reflects your brand's vision."
             },
             {
               id: 3,
-              title: "Track Real-Time Results",              description: "Watch your clips climb trending charts in real-time. Full transparency with detailed analytics showing views, engagement, growth metrics, and ROI. Optimize on the fly based on what's working with direct collaboration and personalized guidance.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-analytics-dashboard-showing-real-time-1772847775477-be40e150.png",              imageAlt: "Analytics dashboard real-time metrics"
+              title: "Track Real-Time Results",              description: "Watch your clips climb trending charts in real-time. Full transparency with detailed analytics showing views, engagement, growth metrics, and ROI. Optimize on the fly based on what's working with direct collaboration and personalized guidance."
             },
           ]}
         />
@@ -203,39 +201,6 @@ export default function LandingPage() {
         />
       </div>
 
-      <div id="testimonials" data-section="testimonials">
-        <TestimonialCardTwo
-          title="What Clients Say"
-          description="Real feedback from creators and brands who've experienced the impact of our personalized clipping services and dedicated team management."
-          tag="Client Testimonials"
-          tagIcon={MessageSquare}
-          tagAnimation="slide-up"
-          textboxLayout="default"
-          useInvertedBackground={false}
-          testimonials={[
-            {
-              id: "1",              name: "Alex Rivera",              role: "Podcast Host",              testimonial: "Within 2 weeks of launching my private clipping project, my podcast downloads tripled. The dedicated team handling my clips on TikTok and Instagram are driving real listeners to my full episodes. Best investment I've made.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=1",              imageAlt: "Alex Rivera podcast host"
-            },
-            {
-              id: "2",              name: "Jordan Chen",              role: "Brand Marketing Director",              testimonial: "We tried traditional agencies for months with minimal results. The personalized clipping team delivered 25M views in the first month—all organic, zero ad spend. The transparency and direct collaboration are unmatched.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-marke-1772847774096-d4ca7a22.png",              imageAlt: "Jordan Chen brand director"
-            },
-            {
-              id: "3",              name: "Sam Thompson",              role: "Content Creator",              testimonial: "I was drowning in content repurposing. Having a dedicated team handle my clipping project freed me up to focus on creating. My personalized clips are now my #1 lead source for brand deals.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-social-medi-1772847774170-c3d5b803.png",              imageAlt: "Sam Thompson content creator"
-            },
-            {
-              id: "4",              name: "Maya Patel",              role: "Music Producer",              testimonial: "The personalized clipping process was simple and collaborative. My music got in front of millions of new listeners through optimized short-form content managed directly by the team. Highly recommend for any artist looking to scale.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-different-c-1772847773694-573d36da.png",              imageAlt: "Maya Patel music producer"
-            },
-            {
-              id: "5",              name: "David Lee",              role: "Startup CEO",              testimonial: "Our product launch videos became trending clips within days through direct team collaboration. The organic reach we got from the personalized clipping project was worth 10x the investment in traditional advertising.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-repre-1772847774538-779f0ff6.png",              imageAlt: "David Lee startup CEO"
-            },
-            {
-              id: "6",              name: "Emma Watson",              role: "Influencer",              testimonial: "Clear metrics, real-time updates, and personalized clips that actually trend. Working with a dedicated team instead of agencies is how modern content distribution should work. No fluff, just results.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=2",              imageAlt: "Emma Watson influencer"
-            },
-          ]}
-          animationType="slide-up"
-        />
-      </div>
-
       <div id="faq" data-section="faq">
         <FaqBase
           title="Frequently Asked Questions"
@@ -303,7 +268,6 @@ export default function LandingPage() {
             {
               items: [
                 { label: "About", href: "#about" },
-                { label: "Testimonials", href: "#testimonials" },
                 { label: "FAQ", href: "#faq" },
               ],
             },
