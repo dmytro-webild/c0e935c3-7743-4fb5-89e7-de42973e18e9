@@ -1,8 +1,6 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/providers/serviceWrapper/ServiceWrapper";
-import { Tag } from "@/components/tag/Tag";
 
 const poppins = Poppins({
   variable: "--font-poppins",  subsets: ["latin"],
@@ -20,10 +18,7 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <body className={`${poppins.variable}`}>
-        <ServiceWrapper>
-          <Tag />
-          {children}
-        </ServiceWrapper>
+        {children}
       
         <script
           dangerouslySetInnerHTML={{
