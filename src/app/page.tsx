@@ -88,10 +88,6 @@ export default function LandingPage() {
             { text: "Book A Call", href: "https://calendly.com" },
           ]}
           buttonAnimation="slide-up"
-          containerClassName="w-full flex flex-col lg:flex-row lg:items-center lg:justify-center gap-6 lg:gap-8"
-          textBoxClassName="w-full lg:w-1/2 flex flex-col gap-6"
-          carouselWrapperClassName="w-full lg:w-1/2 flex flex-col gap-4"
-          carouselColumnClassName="w-full flex flex-col gap-4"
         />
       </div>
 
