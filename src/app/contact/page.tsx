@@ -1,12 +1,14 @@
 "use client";
 
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
+import Link from "next/link";
 import { useState } from "react";
 
 const ContactPage = () => {
   const [formData, setFormData] = useState({
-    name: "",    email: "",    message: ""});
+    name: "",    email: "",    message: ""
+  });
 
   const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -15,7 +17,6 @@ const ContactPage = () => {
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
-    // Handle form submission
     console.log("Form submitted:", formData);
     setFormData({ name: "", email: "", message: "" });
   };
@@ -33,18 +34,21 @@ const ContactPage = () => {
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
-      <NavbarLayoutFloatingInline
-        navItems={[
-          { name: "Home", id: "/" },
-          { name: "About", id: "#about" },
-          { name: "Services", id: "#services" },
-          { name: "Contact", id: "/contact" },
-        ]}
-        brandName="billiclipd"
-        button={{
-          text: "Book a Call",          href: "/contact"}}
-        animateOnLoad={true}
-      />
+      <div id="nav" data-section="nav">
+        <NavbarLayoutFloatingInline
+          navItems={[
+            { name: "Home", id: "/" },
+            { name: "About", id: "#about" },
+            { name: "Services", id: "#services" },
+            { name: "Contact", id: "/contact" },
+          ]}
+          brandName="billiclipd"
+          button={{
+            text: "Book a Call",            href: "/contact"
+          }}
+          animateOnLoad={true}
+        />
+      </div>
 
       <div id="contact-page" data-section="contact-page" className="pt-40 pb-20 px-4">
         <div className="max-w-2xl mx-auto">
