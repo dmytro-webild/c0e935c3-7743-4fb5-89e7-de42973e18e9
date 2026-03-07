@@ -122,7 +122,7 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Book an Intro Call",              description: "We start with a quick intro call to understand your goals, target audience, and creative direction. I build a custom clipping strategy designed to maximize reach and engagement—whether you're a brand, artist, creator, or product.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-a-consultation-v-1772847774769-61fe5500.png",              imageAlt: "Consultation call strategy planning",              buttons: [{ text: "Start Your Campaign", href: "https://calendly.com" }],
+              title: "Step #1",              description: "Book an Intro CallWe start with a quick intro call to understand your goals, target audience, and creative direction. From there, our team builds a custom clipping campaign designed to maximize reach and engagement — whether you’re a brand, artist, creator, or product. ",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-a-consultation-v-1772847774769-61fe5500.png",              imageAlt: "Consultation call strategy planning",              buttons: [{ text: "Start Your Campaign", href: "https://calendly.com" }],
             },
             {
               id: 2,
@@ -174,16 +174,16 @@ export default function LandingPage() {
           useInvertedBackground={false}
           products={[
             {
-              id: "bbno",              name: "BBNO$ - Music Artist",              price: "16.5M",              variant: "Listeners | Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=1",              imageAlt: "BBNO$ campaign case study"
+              id: "bbno",              name: "Ericcouu -  influencer ",              price: "",              variant: "Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-h65hjshx.jpg",              imageAlt: "BBNO$ campaign case study"
             },
             {
-              id: "dhar-mann",              name: "Dhar Mann - Influencer",              price: "136M",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-mr1xedhd.jpg",              imageAlt: "Dhar Mann case study"
+              id: "dhar-mann",              name: "Brandon Clark- Gym coach",              price: "",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-mr1xedhd.jpg",              imageAlt: "Dhar Mann case study"
             },
             {
-              id: "paul-american",              name: "Paul American - TV Show",              price: "140M",              variant: "Followers | Entertainment Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg",              imageAlt: "Paul American case study"
+              id: "paul-american",              name: "PB Investing - Trader",              price: "",              variant: "Followers | Trading Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg",              imageAlt: "Paul American case study"
             },
             {
-              id: "tate-mccrae",              name: "Tate McCrae - Artist",              price: "57.6M",              variant: "Listeners | Music Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=2",              imageAlt: "Tate McCrae campaign"
+              id: "tate-mccrae",              name: "Sexyishaan -  influencer",              price: "",              variant: "Entertainment ",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-1pjxjkc4.jpg",              imageAlt: "Tate McCrae campaign"
             },
           ]}
           gridVariant="uniform-all-items-equal"
