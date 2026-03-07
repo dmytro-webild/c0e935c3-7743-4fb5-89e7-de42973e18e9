@@ -22,16 +22,19 @@ const publicSans = Public_Sans({
 export const metadata: Metadata = {
   title: "Shortform Content Clipping & Viral Growth | Clipping Culture",  description: "Transform your longform content into viral shortform clips. 10B+ views generated. TikTok, Reels, Shorts optimization. Proven methodology for organic creator growth.",  keywords: "shortform content clipping, TikTok clips, viral growth, content repurposing, Instagram Reels, YouTube Shorts",  metadataBase: new URL("https://clippingculture.com"),
   alternates: {
-    canonical: "https://clippingculture.com"},
+    canonical: "https://clippingculture.com"
+  },
   openGraph: {
     title: "Turn Longform Into Viral Clips | Clipping Culture",    description: "I transform your best podcast, stream, and video moments into high-retention shortform content optimized for TikTok, Instagram Reels, and YouTube Shorts.",    url: "https://clippingculture.com",    siteName: "Clipping Culture",    type: "website",    images: [
       {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",        alt: "Clipping Culture viral shortform content"},
+        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",        alt: "Clipping Culture viral shortform content"
+      },
     ],
   },
   twitter: {
     card: "summary_large_image",    title: "Turn Longform Into Viral Clips",    description: "10B+ views generated. Transform your content into trending shortform clips.",    images: [
-      "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png"],
+      "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png"
+    ],
   },
   robots: {
     index: true,
