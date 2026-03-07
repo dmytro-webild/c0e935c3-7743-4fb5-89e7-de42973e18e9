@@ -2,7 +2,8 @@ import type { Metadata } from "next";
 import "./styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "billiclipd | Viral Clip Editing Services",  description: "Transform your long-form content into viral clips. Expert editing for TikTok, Instagram Reels, and YouTube Shorts. 10M+ views generated."};
+  title: "billiclipd | Viral Clip Editing Services",  description: "Transform your long-form content into viral clips. Expert editing for TikTok, Instagram Reels, and YouTube Shorts. 10M+ views generated."
+};
 
 export default function RootLayout({
   children,
