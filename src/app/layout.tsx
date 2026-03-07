@@ -1,38 +1,61 @@
 import type { Metadata } from "next";
-import { ReactLenis } from "lenis/react";
-import "./styles/variables.css";
-import "./styles/base.css";
+import { Halant } from "next/font/google";
+import { Inter } from "next/font/google";
+import { Public_Sans } from "next/font/google";
+import "./globals.css";
+import { ServiceWrapper } from "@/components/ServiceWrapper";
+import Tag from "@/tag/Tag";
+
+const halant = Halant({
+  variable: "--font-halant",  subsets: ["latin"],
+  weight: ["300", "400", "500", "600", "700"],
+});
+
+const inter = Inter({
+  variable: "--font-inter",  subsets: ["latin"],
+});
+
+const publicSans = Public_Sans({
+  variable: "--font-public-sans",  subsets: ["latin"],
+});
 
 export const metadata: Metadata = {
-  title: "billiclipd - Turn LongForm Into Viral Clips",  description: "Transform your podcast, stream, and video moments into high-retention shortform content optimized for TikTok, Instagram Reels, and YouTube Shorts."};
+  title: "Private Clipping Services & Team Management | billiclipd",  description: "Transform your longform content into viral shortform clips with personalized team management. 10B+ views generated. TikTok, Reels, Shorts optimization with direct collaboration.",  keywords: "private clipping services, TikTok clips, viral growth, content repurposing, Instagram Reels, YouTube Shorts, dedicated team",  metadataBase: new URL("https://billiclipd.com"),
+  alternates: {
+    canonical: "https://billiclipd.com"
+  },
+  openGraph: {
+    title: "Private Clipping & Team Management | billiclipd",    description: "I transform your best podcast, stream, and video moments into high-retention shortform content with personalized team management.",    url: "https://billiclipd.com",    siteName: "billiclipd",    type: "website",    images: [
+      {
+        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",        alt: "billiclipd private clipping service"
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",    title: "Private Clipping & Team Management",    description: "10B+ views generated. Transform your content with personalized team collaboration.",    images: [
+      "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png"
+    ],
+  },
+  robots: {
+    index: true,
+    follow: true,
+  },
+};
 
 export default function RootLayout({
   children,
-}: {
+}: Readonly<{
   children: React.ReactNode;
-}) {
+}>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <head>
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark')
-                } else {
-                  document.documentElement.classList.remove('dark')
-                }
-              } catch (e) {}
-            `,
-          }}
-        />
-      </head>
-      <body suppressHydrationWarning>
-        <ReactLenis root>
+      <ServiceWrapper>
+        <body
+          className={`${halant.variable} ${inter.variable} ${publicSans.variable} antialiased`}
+        >
+          <Tag />
           {children}
-        </ReactLenis>
-      
+        
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1400,6 +1423,7 @@ export default function RootLayout({
           }}
         />
       </body>
+      </ServiceWrapper>
     </html>
   );
 }
