@@ -1,98 +1,123 @@
 "use client";
 
-import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarLayoutFloatingOverlay from "@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay";
-import FooterLogoEmphasis from "@/components/sections/footer/FooterLogoEmphasis";
-import { useEffect } from "react";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import NavbarLayoutFloatingInline from "@/components/navbar/NavbarLayoutFloatingInline";
+import { useState } from "react";
 
-export default function ContactPage() {
-  useEffect(() => {
-    const script = document.createElement("script");
-    script.src = "https://assets.calendly.com/assets/external/widget.js";
-    script.async = true;
-    document.body.appendChild(script);
-    return () => {
-      document.body.removeChild(script);
-    };
-  }, []);
+const ContactPage = () => {
+  const [formData, setFormData] = useState({
+    name: "",    email: "",    message: ""});
+
+  const handleInputChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+    const { name, value } = e.target;
+    setFormData((prev) => ({ ...prev, [name]: value }));
+  };
+
+  const handleSubmit = (e: React.FormEvent) => {
+    e.preventDefault();
+    // Handle form submission
+    console.log("Form submitted:", formData);
+    setFormData({ name: "", email: "", message: "" });
+  };
 
   return (
     <ThemeProvider
-      defaultButtonVariant="bounce-effect"
+      defaultButtonVariant="hover-magnetic"
       defaultTextAnimation="entrance-slide"
-      borderRadius="pill"
-      contentWidth="mediumLarge"
-      sizing="mediumSizeLargeTitles"
-      background="noise"
-      cardStyle="soft-shadow"
-      primaryButtonStyle="radial-glow"
-      secondaryButtonStyle="solid"
-      headingFontWeight="light"
+      borderRadius="rounded"
+      contentWidth="medium"
+      sizing="medium"
+      background="none"
+      cardStyle="solid"
+      primaryButtonStyle="gradient"
+      secondaryButtonStyle="glass"
+      headingFontWeight="bold"
     >
-      <div id="nav" data-section="nav">
-        <NavbarLayoutFloatingOverlay
-          brandName="billiclipd"
-          navItems={[
-            { name: "Case Studies", id: "case-studies" },
-            { name: "About", id: "about" },
-            { name: "Process", id: "process" },
-            { name: "Contact", id: "/contact" },
-          ]}
-          button={{
-            text: "Book A Call",            href: "https://calendly.com"
-          }}
-        />
-      </div>
+      <NavbarLayoutFloatingInline
+        navItems={[
+          { name: "Home", id: "/" },
+          { name: "About", id: "#about" },
+          { name: "Services", id: "#services" },
+          { name: "Contact", id: "/contact" },
+        ]}
+        brandName="billiclipd"
+        button={{
+          text: "Book a Call",          href: "/contact"}}
+        animateOnLoad={true}
+      />
 
-      <div className="min-h-screen pt-20 pb-20">
-        <div className="flex flex-col items-center justify-center">
-          <div className="w-full max-w-4xl px-4 sm:px-6 lg:px-8">
-            <div className="text-center mb-12">
-              <h1 className="text-4xl sm:text-5xl lg:text-6xl font-bold mb-4">
-                Schedule a Call With Me
-              </h1>
-              <p className="text-lg sm:text-xl text-foreground/70">
-                Book a time that works for you. Let's discuss your project and how I can help you turn your content into viral clips.
-              </p>
+      <div id="contact-page" data-section="contact-page" className="pt-40 pb-20 px-4">
+        <div className="max-w-2xl mx-auto">
+          <h1 className="text-5xl font-bold mb-4 text-center">Get in Touch</h1>
+          <p className="text-lg text-center mb-12 opacity-75">
+            Ready to turn your content into viral clips? Fill out the form below and our team will get back to you within 24 hours.
+          </p>
+
+          <form onSubmit={handleSubmit} className="space-y-6 bg-card p-8 rounded-lg border border-accent">
+            <div>
+              <label htmlFor="name" className="block text-sm font-medium mb-2">
+                Full Name
+              </label>
+              <input
+                type="text"
+                id="name"
+                name="name"
+                value={formData.name}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-2 rounded border border-accent bg-background text-foreground focus:outline-none focus:border-primary-cta"
+                placeholder="Your name"
+              />
             </div>
 
-            <div className="w-full bg-card rounded-2xl p-4 sm:p-6 lg:p-8 shadow-lg">
-              <div
-                className="calendly-inline-widget w-full h-screen min-h-[800px] sm:min-h-[900px] lg:min-h-[1000px]"
-                data-url="https://calendly.com/ibbiyousuf420/30min"
-              ></div>
+            <div>
+              <label htmlFor="email" className="block text-sm font-medium mb-2">
+                Email Address
+              </label>
+              <input
+                type="email"
+                id="email"
+                name="email"
+                value={formData.email}
+                onChange={handleInputChange}
+                required
+                className="w-full px-4 py-2 rounded border border-accent bg-background text-foreground focus:outline-none focus:border-primary-cta"
+                placeholder="your@email.com"
+              />
             </div>
+
+            <div>
+              <label htmlFor="message" className="block text-sm font-medium mb-2">
+                Message
+              </label>
+              <textarea
+                id="message"
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                rows={5}
+                className="w-full px-4 py-2 rounded border border-accent bg-background text-foreground focus:outline-none focus:border-primary-cta resize-none"
+                placeholder="Tell us about your project..."
+              />
+            </div>
+
+            <button
+              type="submit"
+              className="w-full bg-primary-cta text-primary-cta-text font-semibold py-3 rounded hover:opacity-90 transition-opacity"
+            >
+              Send Message
+            </button>
+          </form>
+
+          <div className="mt-12 text-center">
+            <p className="text-sm opacity-60">Or reach out to us directly at:</p>
+            <p className="text-lg font-semibold mt-2">hello@billiclipd.com</p>
           </div>
         </div>
       </div>
-
-      <div id="footer" data-section="footer">
-        <FooterLogoEmphasis
-          logoText="billiclipd"
-          columns={[
-            {
-              items: [
-                { label: "Home", href: "/" },
-                { label: "Case Studies", href: "#case-studies" },
-                { label: "Process", href: "#process" },
-              ],
-            },
-            {
-              items: [
-                { label: "About", href: "#about" },
-                { label: "FAQ", href: "#faq" },
-              ],
-            },
-            {
-              items: [
-                { label: "Contact", href: "/contact" },
-                { label: "Book A Call", href: "https://calendly.com" },
-                { label: "Privacy Policy", href: "#" },
-              ],
-            },
-          ]}
-        />
-      </div>
     </ThemeProvider>
   );
-}
+};
+
+export default ContactPage;
