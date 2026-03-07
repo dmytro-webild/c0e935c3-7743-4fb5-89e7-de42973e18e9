@@ -243,7 +243,7 @@ export default function LandingPage() {
 
       <div id="contact" data-section="contact">
         <ContactText
-          text="Ready to launch your private clipping project with a dedicated team? Let's discuss your unique vision and explore how direct collaboration can help you reach millions of engaged viewers—no ad spend required."
+          text="Ready To Turn Your Content Into Viral Clips 👇 "
           animationType="entrance-slide"
           background={{ variant: "radial-gradient" }}
           useInvertedBackground={false}
