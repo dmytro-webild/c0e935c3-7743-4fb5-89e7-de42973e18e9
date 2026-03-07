@@ -49,7 +49,8 @@ export default function LandingPage() {
             { name: "Contact", id: "contact" },
           ]}
           button={{
-            text: "Book A Call",            href: "https://calendly.com"}}
+            text: "Book A Call",            href: "https://calendly.com"
+          }}
         />
       </div>
 
@@ -63,23 +64,31 @@ export default function LandingPage() {
           background={{ variant: "glowing-orb" }}
           leftCarouselItems={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png?_wi=1",              imageAlt: "TikTok viral clip example"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png?_wi=1",              imageAlt: "TikTok viral clip example"
+            },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png?_wi=1",              imageAlt: "Professional editing dashboard"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png?_wi=1",              imageAlt: "Professional editing dashboard"
+            },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png?_wi=1",              imageAlt: "Instagram Reels clip"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png?_wi=1",              imageAlt: "Instagram Reels clip"
+            },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-youtube-shorts-vertical-video-frame-sh-1772847774790-1b515168.png",              imageAlt: "YouTube Shorts content"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-youtube-shorts-vertical-video-frame-sh-1772847774790-1b515168.png",              imageAlt: "YouTube Shorts content"
+            },
           ]}
           rightCarouselItems={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-dynamic-montage-of-multiple-trending-t-1772847775452-15beec39.png",              imageAlt: "Trending clips montage"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-dynamic-montage-of-multiple-trending-t-1772847775452-15beec39.png",              imageAlt: "Trending clips montage"
+            },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png?_wi=2",              imageAlt: "Editing interface"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png?_wi=2",              imageAlt: "Editing interface"
+            },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png?_wi=2",              imageAlt: "Viral content creation"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png?_wi=2",              imageAlt: "Viral content creation"
+            },
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png?_wi=2",              imageAlt: "Social media optimization"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png?_wi=2",              imageAlt: "Social media optimization"
+            },
           ]}
           carouselPosition="right"
           buttons={[
@@ -92,7 +101,7 @@ export default function LandingPage() {
 
       <div id="social-proof" data-section="social-proof">
         <SocialProofOne
-          title="Trusted By Top Creators & Brands"
+          title="Trusted by Top Creators and Brands"
           description="Over 10B+ views generated. I've powered viral campaigns for artists, influencers, TV shows, and products reaching hundreds of millions of followers."
           tag="10B+ Views Generated"
           tagIcon={TrendingUp}
@@ -100,7 +109,8 @@ export default function LandingPage() {
           textboxLayout="default"
           useInvertedBackground={false}
           names={[
-            "BBNO$ - 16.5M Listeners",            "Dhar Mann - 136M Followers",            "Paul American - 140M Followers",            "Tate McCrae - 57.6M Listeners",            "Hostage Tape - 150K Customers",            "The Rolling Stones - 27M Listeners",            "Monkey Tilt - 300K Users",            "Selena Gomez - 42.4M Followers"]}
+            "Brandon Clark - 600K Followers",            "Sexyishaan - 60K Followers",            "Ericcouu - 300K Followers",            "Dhar Mann - 136M Followers",            "Paul American - 140M Followers",            "Tate McCrae - 57.6M Listeners",            "Hostage Tape - 150K Customers",            "The Rolling Stones - 27M Listeners"
+          ]}
           speed={40}
           showCard={true}
         />
@@ -122,10 +132,12 @@ export default function LandingPage() {
             },
             {
               id: 2,
-              title: "Clippers Start Posting",              description: "Once your campaign is locked in, our network springs into action. Content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"},
+              title: "Clippers Start Posting",              description: "Once your campaign is locked in, our network springs into action. Content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"
+            },
             {
               id: 3,
-              title: "Track Real-Time Results",              description: "Watch your clips climb trending charts in real-time. Full transparency with detailed analytics showing views, engagement, growth metrics, and ROI. Optimize on the fly based on what's working.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-analytics-dashboard-showing-real-time-1772847775477-be40e150.png",              imageAlt: "Analytics dashboard real-time metrics"},
+              title: "Track Real-Time Results",              description: "Watch your clips climb trending charts in real-time. Full transparency with detailed analytics showing views, engagement, growth metrics, and ROI. Optimize on the fly based on what's working.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-analytics-dashboard-showing-real-time-1772847775477-be40e150.png",              imageAlt: "Analytics dashboard real-time metrics"
+            },
           ]}
         />
       </div>
@@ -168,13 +180,17 @@ export default function LandingPage() {
           useInvertedBackground={false}
           products={[
             {
-              id: "bbno",              name: "BBNO$ - Music Artist",              price: "16.5M",              variant: "Listeners | Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=1",              imageAlt: "BBNO$ campaign case study"},
+              id: "bbno",              name: "BBNO$ - Music Artist",              price: "16.5M",              variant: "Listeners | Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=1",              imageAlt: "BBNO$ campaign case study"
+            },
             {
-              id: "dhar-mann",              name: "Dhar Mann - Influencer",              price: "136M",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-influencer-case-study-sho-1772847776930-7a6e87b3.png",              imageAlt: "Dhar Mann case study"},
+              id: "dhar-mann",              name: "Dhar Mann - Influencer",              price: "136M",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-influencer-case-study-sho-1772847776930-7a6e87b3.png",              imageAlt: "Dhar Mann case study"
+            },
             {
-              id: "paul-american",              name: "Paul American - TV Show",              price: "140M",              variant: "Followers | Entertainment Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-television-show-case-study-with-140m-f-1772847781498-064f7d24.png",              imageAlt: "Paul American case study"},
+              id: "paul-american",              name: "Paul American - TV Show",              price: "140M",              variant: "Followers | Entertainment Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-television-show-case-study-with-140m-f-1772847781498-064f7d24.png",              imageAlt: "Paul American case study"
+            },
             {
-              id: "tate-mccrae",              name: "Tate McCrae - Artist",              price: "57.6M",              variant: "Listeners | Music Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=2",              imageAlt: "Tate McCrae campaign"},
+              id: "tate-mccrae",              name: "Tate McCrae - Artist",              price: "57.6M",              variant: "Listeners | Music Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=2",              imageAlt: "Tate McCrae campaign"
+            },
           ]}
           gridVariant="uniform-all-items-equal"
           animationType="slide-up"
@@ -185,7 +201,8 @@ export default function LandingPage() {
         <TextSplitAbout
           title="Why I Do This"
           description={[
-            "I started clipping because I saw creators and brands struggling to repurpose their best content. They were sitting on goldmines—podcasts, streams, videos—but lacked the time, skills, or network to turn them into viral clips.",            "Now, with a network of 40,000+ expert clippers and a proven methodology, I've helped launch campaigns that generated over 10 billion views. No agencies. No gatekeeping. Just results.",            "Every client I work with gets direct access to a team obsessed with viral growth, algorithmic optimization, and transparent metrics. Your success is my success."]}
+            "I started clipping because I saw creators and brands struggling to repurpose their best content. They were sitting on goldmines—podcasts, streams, videos—but lacked the time, skills, or network to turn them into viral clips.",            "Now, with a network of 40,000+ expert clippers and a proven methodology, I've helped launch campaigns that generated over 10 billion views. No agencies. No gatekeeping. Just results.",            "Every client I work with gets direct access to a team obsessed with viral growth, algorithmic optimization, and transparent metrics. Your success is my success."
+          ]}
           useInvertedBackground={false}
           showBorder={false}
           buttons={[{ text: "Schedule Consultation", href: "https://calendly.com" }]}
@@ -203,17 +220,23 @@ export default function LandingPage() {
           useInvertedBackground={false}
           testimonials={[
             {
-              id: "1",              name: "Alex Rivera",              role: "Podcast Host",              testimonial: "Within 2 weeks of launching my clipping campaign, my podcast downloads tripled. The viral clips on TikTok and Instagram are driving real listeners to my full episodes. Best investment I've made.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=1",              imageAlt: "Alex Rivera podcast host"},
+              id: "1",              name: "Alex Rivera",              role: "Podcast Host",              testimonial: "Within 2 weeks of launching my clipping campaign, my podcast downloads tripled. The viral clips on TikTok and Instagram are driving real listeners to my full episodes. Best investment I've made.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=1",              imageAlt: "Alex Rivera podcast host"
+            },
             {
-              id: "2",              name: "Jordan Chen",              role: "Brand Marketing Director",              testimonial: "We tried traditional agencies for months with minimal results. Clipping Culture delivered 25M views in the first month—all organic, zero ad spend. The transparency and speed are unmatched.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-marke-1772847774096-d4ca7a22.png",              imageAlt: "Jordan Chen brand director"},
+              id: "2",              name: "Jordan Chen",              role: "Brand Marketing Director",              testimonial: "We tried traditional agencies for months with minimal results. Clipping Culture delivered 25M views in the first month—all organic, zero ad spend. The transparency and speed are unmatched.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-marke-1772847774096-d4ca7a22.png",              imageAlt: "Jordan Chen brand director"
+            },
             {
-              id: "3",              name: "Sam Thompson",              role: "Content Creator",              testimonial: "I was drowning in content repurposing. Having a team of clippers handle it freed me up to focus on creating. My viral clips are now my #1 lead source for brand deals.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-social-medi-1772847774170-c3d5b803.png",              imageAlt: "Sam Thompson content creator"},
+              id: "3",              name: "Sam Thompson",              role: "Content Creator",              testimonial: "I was drowning in content repurposing. Having a team of clippers handle it freed me up to focus on creating. My viral clips are now my #1 lead source for brand deals.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-social-medi-1772847774170-c3d5b803.png",              imageAlt: "Sam Thompson content creator"
+            },
             {
-              id: "4",              name: "Maya Patel",              role: "Music Producer",              testimonial: "The clipping process was simple and collaborative. My music got in front of millions of new listeners through optimized short-form content. Highly recommend for any artist looking to scale.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-different-c-1772847773694-573d36da.png",              imageAlt: "Maya Patel music producer"},
+              id: "4",              name: "Maya Patel",              role: "Music Producer",              testimonial: "The clipping process was simple and collaborative. My music got in front of millions of new listeners through optimized short-form content. Highly recommend for any artist looking to scale.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-different-c-1772847773694-573d36da.png",              imageAlt: "Maya Patel music producer"
+            },
             {
-              id: "5",              name: "David Lee",              role: "Startup CEO",              testimonial: "Our product launch videos became trending clips within days. The organic reach we got from Clipping Culture's network was worth 10x the investment in traditional advertising.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-repre-1772847774538-779f0ff6.png",              imageAlt: "David Lee startup CEO"},
+              id: "5",              name: "David Lee",              role: "Startup CEO",              testimonial: "Our product launch videos became trending clips within days. The organic reach we got from Clipping Culture's network was worth 10x the investment in traditional advertising.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-repre-1772847774538-779f0ff6.png",              imageAlt: "David Lee startup CEO"
+            },
             {
-              id: "6",              name: "Emma Watson",              role: "Influencer",              testimonial: "Clear metrics, real-time updates, and clips that actually trend. This is how modern content distribution should work. No fluff, just results.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=2",              imageAlt: "Emma Watson influencer"},
+              id: "6",              name: "Emma Watson",              role: "Influencer",              testimonial: "Clear metrics, real-time updates, and clips that actually trend. This is how modern content distribution should work. No fluff, just results.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=2",              imageAlt: "Emma Watson influencer"
+            },
           ]}
           animationType="slide-up"
         />
@@ -230,21 +253,29 @@ export default function LandingPage() {
           useInvertedBackground={false}
           faqs={[
             {
-              id: "1",              title: "What exactly is Clipping Culture?",              content: "Clipping Culture is a shortform content clipping and distribution service. I transform your longform content (podcasts, streams, videos) into high-retention clips optimized for TikTok, Instagram Reels, and YouTube Shorts. I use a network of 40,000+ expert clippers to distribute your content across platforms, driving organic reach and viral growth."},
+              id: "1",              title: "What exactly is Clipping Culture?",              content: "Clipping Culture is a shortform content clipping and distribution service. I transform your longform content (podcasts, streams, videos) into high-retention clips optimized for TikTok, Instagram Reels, and YouTube Shorts. I use a network of 40,000+ expert clippers to distribute your content across platforms, driving organic reach and viral growth."
+            },
             {
-              id: "2",              title: "How does the clipping process work?",              content: "Step 1: Book an intro call where we discuss your goals and content strategy. Step 2: Your content gets assigned to our network of clippers who create and optimize clips for each platform. Step 3: Clips launch simultaneously across social platforms and we track real-time performance with detailed analytics."},
+              id: "2",              title: "How does the clipping process work?",              content: "Step 1: Book an intro call where we discuss your goals and content strategy. Step 2: Your content gets assigned to our network of clippers who create and optimize clips for each platform. Step 3: Clips launch simultaneously across social platforms and we track real-time performance with detailed analytics."
+            },
             {
-              id: "3",              title: "How quickly can I launch a campaign?",              content: "Most campaigns launch within 2-5 business days after the initial strategy call. Your content goes through our optimization process, gets distributed to the clipper network, and begins gaining traction immediately. Real-time results start appearing within hours."},
+              id: "3",              title: "How quickly can I launch a campaign?",              content: "Most campaigns launch within 2-5 business days after the initial strategy call. Your content goes through our optimization process, gets distributed to the clipper network, and begins gaining traction immediately. Real-time results start appearing within hours."
+            },
             {
-              id: "4",              title: "What types of creators and businesses do you work with?",              content: "I work with podcasters, streamers, musicians, influencers, TV shows, brands, product launches, apps, startups, casinos, and content entrepreneurs. Essentially, if you have longform content and want to maximize viral reach through shortform clips, we're a fit."},
+              id: "4",              title: "What types of creators and businesses do you work with?",              content: "I work with podcasters, streamers, musicians, influencers, TV shows, brands, product launches, apps, startups, casinos, and content entrepreneurs. Essentially, if you have longform content and want to maximize viral reach through shortform clips, we're a fit."
+            },
             {
-              id: "5",              title: "Is there a cost to start? What's the pricing model?",              content: "Pricing varies based on your campaign scope, content volume, and distribution network size. I offer custom packages tailored to your goals. Contact me for a consultation and I'll provide transparent pricing with no hidden fees."},
+              id: "5",              title: "Is there a cost to start? What's the pricing model?",              content: "Pricing varies based on your campaign scope, content volume, and distribution network size. I offer custom packages tailored to your goals. Contact me for a consultation and I'll provide transparent pricing with no hidden fees."
+            },
             {
-              id: "6",              title: "How is this different from hiring a video editor?",              content: "I'm not just editing videos—I'm optimizing them for viral growth across platforms. My clipping methodology includes audience research, platform algorithms, trend analysis, optimal timing, and distribution through a massive creator network. It's a complete organic growth system, not just editing."},
+              id: "6",              title: "How is this different from hiring a video editor?",              content: "I'm not just editing videos—I'm optimizing them for viral growth across platforms. My clipping methodology includes audience research, platform algorithms, trend analysis, optimal timing, and distribution through a massive creator network. It's a complete organic growth system, not just editing."
+            },
             {
-              id: "7",              title: "Do I retain ownership of my clips?",              content: "100%. You retain full ownership of all clips created. I handle distribution and optimization, but the content is yours. We simply amplify it through my network to drive maximum views and engagement."},
+              id: "7",              title: "Do I retain ownership of my clips?",              content: "100%. You retain full ownership of all clips created. I handle distribution and optimization, but the content is yours. We simply amplify it through my network to drive maximum views and engagement."
+            },
             {
-              id: "8",              title: "What kind of results should I expect?",              content: "Results vary based on content quality, audience size, and platform fit. My clients typically see 3-5x ROI within the first month. Many experience viral clips (100K-500K+ views), new followers, lead generation, and increased business opportunities from the exposure."},
+              id: "8",              title: "What kind of results should I expect?",              content: "Results vary based on content quality, audience size, and platform fit. My clients typically see 3-5x ROI within the first month. Many experience viral clips (100K-500K+ views), new followers, lead generation, and increased business opportunities from the exposure."
+            },
           ]}
           faqsAnimation="slide-up"
           animationType="smooth"
