@@ -221,7 +221,7 @@ export default function LandingPage() {
               id: "3",              title: "How quickly can I launch my private project?",              content: "Most private clipping projects launch within 2-5 business days after the initial strategy call. Your content goes through our personalized optimization process, and begins gaining traction immediately. Real-time results start appearing within hours, with our team providing direct updates on performance."
             },
             {
-              id: "4",              title: "What types of creators and businesses do you work with?",              content: "I work with podcasters, streamers,  influencers, TV shows, brands, product launches, apps, startups, and content entrepreneurs seeking personalized team management. Essentially, if you have longform content and want to maximize viral reach through direct collaboration with expert clippers, we're a fit."
+              id: "4",              title: "What types of creators and businesses do you work with?",              content: "I work with podcasters, streamers,  influencers, TV shows, brands, product launches, apps, startups, and content entrepreneurs seeking personalized team management. Essentially, if you have longform or short-form content and want to maximize viral reach through direct collaboration with expert clippers, we're a fit."
             },
             {
               id: "5",              title: "Is there a cost to start? What's the pricing model?",              content: "Pricing varies based on your project scope, content volume, and dedicated team support level. I offer custom packages tailored to your specific goals and vision. Contact me for a consultation and I'll provide transparent pricing with no hidden fees."
