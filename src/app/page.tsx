@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
 import HeroBillboardCarousel from "@/components/sections/hero/HeroBillboardCarousel";
 import InlineImageSplitTextAbout from "@/components/sections/about/InlineImageSplitTextAbout";
@@ -24,18 +24,18 @@ export default function Home() {
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
-      <nav>
+      <div id="nav" data-section="nav">
         <NavbarStyleApple
           navItems={[
             { name: "Home", id: "/" },
-            { name: "About", id: "#about" },
-            { name: "Features", id: "#features" },
-            { name: "Pricing", id: "#pricing" },
+            { name: "About", id: "about" },
+            { name: "Features", id: "features" },
+            { name: "Pricing", id: "pricing" },
             { name: "Contact", id: "/contact" },
           ]}
           brandName="billiclipd"
         />
-      </nav>
+      </div>
 
       <div id="hero" data-section="hero">
         <HeroBillboardCarousel
@@ -45,14 +45,14 @@ export default function Home() {
           tag="Viral Clip Specialist"
           buttons={[
             { text: "Get Started", href: "/contact" },
-            { text: "View Portfolio", href: "#features" },
+            { text: "View Portfolio", href: "features" },
           ]}
           mediaItems={[
-            { imageSrc: "asset://hero-media-1", imageAlt: "Viral clip example 1" },
-            { imageSrc: "asset://hero-media-2", imageAlt: "Viral clip example 2" },
-            { imageSrc: "asset://hero-media-3", imageAlt: "Viral clip example 3" },
-            { imageSrc: "asset://hero-media-4", imageAlt: "Viral clip example 4" },
-            { imageSrc: "asset://hero-media-5", imageAlt: "Viral clip example 5" },
+            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 1" },
+            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 2" },
+            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 3" },
+            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 4" },
+            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 5" },
           ]}
         />
       </div>
@@ -61,13 +61,13 @@ export default function Home() {
         <InlineImageSplitTextAbout
           heading={[
             { type: "text", content: "Transform Your Content Into" },
-            { type: "image", src: "asset://brand-logo", alt: "billiclipd logo" },
+            { type: "image", src: "/placeholders/placeholder1.webp", alt: "billiclipd logo" },
             { type: "text", content: "Viral Moments" },
           ]}
           useInvertedBackground={false}
           buttons={[
             { text: "Learn More", href: "/contact" },
-            { text: "See Examples", href: "#features" },
+            { text: "See Examples", href: "features" },
           ]}
         />
       </div>
@@ -82,29 +82,29 @@ export default function Home() {
             {
               title: "TikTok Optimization",              description: "Perfectly formatted and edited clips for TikTok's viral algorithm",              icon: CheckCircle,
               mediaItems: [
-                { imageSrc: "asset://feature-1a", imageAlt: "TikTok example 1" },
-                { imageSrc: "asset://feature-1b", imageAlt: "TikTok example 2" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "TikTok example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "TikTok example 2" },
               ],
             },
             {
               title: "Instagram Reels",              description: "Eye-catching vertical videos designed for Instagram engagement",              icon: MessageCircle,
               mediaItems: [
-                { imageSrc: "asset://feature-2a", imageAlt: "Instagram example 1" },
-                { imageSrc: "asset://feature-2b", imageAlt: "Instagram example 2" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Instagram example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Instagram example 2" },
               ],
             },
             {
               title: "YouTube Shorts",              description: "High-quality short-form content for YouTube's growing platform",              icon: Sparkles,
               mediaItems: [
-                { imageSrc: "asset://feature-3a", imageAlt: "YouTube example 1" },
-                { imageSrc: "asset://feature-3b", imageAlt: "YouTube example 2" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "YouTube example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "YouTube example 2" },
               ],
             },
             {
               title: "Multi-Platform Distribution",              description: "Strategic repurposing of content across all major social platforms",              icon: Zap,
               mediaItems: [
-                { imageSrc: "asset://feature-4a", imageAlt: "Multi-platform 1" },
-                { imageSrc: "asset://feature-4b", imageAlt: "Multi-platform 2" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Multi-platform 1" },
+                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Multi-platform 2" },
               ],
             },
           ]}
@@ -162,7 +162,7 @@ export default function Home() {
           animationType="entrance-slide"
           buttons={[
             { text: "Book a Call", href: "/contact" },
-            { text: "View Portfolio", href: "#features" },
+            { text: "View Portfolio", href: "features" },
           ]}
           background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}

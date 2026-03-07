@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
 import ContactText from "@/components/sections/contact/ContactText";
 import FooterCard from "@/components/sections/footer/FooterCard";
@@ -19,25 +19,25 @@ export default function ContactPage() {
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
-      <nav>
+      <div id="nav" data-section="nav">
         <NavbarStyleApple
           navItems={[
             { name: "Home", id: "/" },
-            { name: "About", id: "#about" },
-            { name: "Features", id: "#features" },
-            { name: "Pricing", id: "#pricing" },
+            { name: "About", id: "about" },
+            { name: "Features", id: "features" },
+            { name: "Pricing", id: "pricing" },
             { name: "Contact", id: "/contact" },
           ]}
           brandName="billiclipd"
         />
-      </nav>
+      </div>
 
       <div id="contact-hero" data-section="contact-hero" className="py-20">
         <ContactText
           text="Get in touch with our team. We'd love to hear about your content and discuss how we can help you go viral."
           animationType="entrance-slide"
           buttons={[
-            { text: "Schedule a Call", onClick: () => window.open('https://calendly.com/billiclipd', '_blank') },
+            { text: "Schedule a Call", onClick: () => window.open("https://calendly.com/billiclipd", "_blank") },
             { text: "Back to Home", href: "/" },
           ]}
           background={{ variant: "sparkles-gradient" }}
