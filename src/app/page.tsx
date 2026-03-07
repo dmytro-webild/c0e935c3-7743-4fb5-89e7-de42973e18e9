@@ -48,11 +48,11 @@ export default function Home() {
             { text: "View Portfolio", href: "features" },
           ]}
           mediaItems={[
-            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 1" },
-            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 2" },
-            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 3" },
-            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 4" },
-            { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Viral clip example 5" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=1", imageAlt: "Viral clip example 1" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=2", imageAlt: "Viral clip example 2" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=3", imageAlt: "Viral clip example 3" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=4", imageAlt: "Viral clip example 4" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=5", imageAlt: "Viral clip example 5" },
           ]}
         />
       </div>
@@ -82,29 +82,29 @@ export default function Home() {
             {
               title: "TikTok Optimization",              description: "Perfectly formatted and edited clips for TikTok's viral algorithm",              icon: CheckCircle,
               mediaItems: [
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "TikTok example 1" },
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "TikTok example 2" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=6", imageAlt: "TikTok example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=7", imageAlt: "TikTok example 2" },
               ],
             },
             {
               title: "Instagram Reels",              description: "Eye-catching vertical videos designed for Instagram engagement",              icon: MessageCircle,
               mediaItems: [
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Instagram example 1" },
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Instagram example 2" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=8", imageAlt: "Instagram example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=9", imageAlt: "Instagram example 2" },
               ],
             },
             {
               title: "YouTube Shorts",              description: "High-quality short-form content for YouTube's growing platform",              icon: Sparkles,
               mediaItems: [
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "YouTube example 1" },
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "YouTube example 2" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=10", imageAlt: "YouTube example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=11", imageAlt: "YouTube example 2" },
               ],
             },
             {
               title: "Multi-Platform Distribution",              description: "Strategic repurposing of content across all major social platforms",              icon: Zap,
               mediaItems: [
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Multi-platform 1" },
-                { imageSrc: "/placeholders/placeholder1.webp", imageAlt: "Multi-platform 2" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=12", imageAlt: "Multi-platform 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=13", imageAlt: "Multi-platform 2" },
               ],
             },
           ]}
