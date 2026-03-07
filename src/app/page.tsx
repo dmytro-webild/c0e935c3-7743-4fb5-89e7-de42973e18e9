@@ -1,15 +1,14 @@
 "use client";
 
-import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarStyleFullscreen from "@/components/navbar/NavbarStyleFullscreen/NavbarStyleFullscreen";
-import HeroBillboardDashboard from "@/components/sections/hero/HeroBillboardDashboard";
-import TextSplitAbout from "@/components/sections/about/TextSplitAbout";
-import FeatureCardEight from "@/components/sections/feature/FeatureCardEight";
-import ContactCenter from "@/components/sections/contact/ContactCenter";
-import FooterCard from "@/components/sections/footer/FooterCard";
-import { Sparkles, Hexagon, House, MessageSquareText, Settings, CircleDollarSign, ArrowLeftRight, Send, Twitter, Linkedin } from "lucide-react";
+import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import NavbarLayoutFloatingOverlay from "@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay";
+import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
+import SplitAbout from "@/components/sections/about/SplitAbout";
+import ContactFaq from "@/components/sections/contact/ContactFaq";
+import FooterBase from "@/components/sections/footer/FooterBase";
+import { Phone } from "lucide-react";
 
-export default function Home() {
+export default function Page() {
   return (
     <ThemeProvider
       defaultButtonVariant="hover-magnetic"
@@ -21,150 +20,117 @@ export default function Home() {
       cardStyle="solid"
       primaryButtonStyle="gradient"
       secondaryButtonStyle="glass"
-      headingFontWeight="semibold"
+      headingFontWeight="bold"
     >
-      <div id="nav" data-section="nav">
-        <NavbarStyleFullscreen
-          navItems={[
-            { name: "Home", id: "/" },
-            { name: "Features", id: "#features" },
-            { name: "About", id: "#about" },
-            { name: "Contact", id: "/contact" },
-          ]}
-          brandName="billiclipd"
-          bottomLeftText="Global Community"
-          bottomRightText="hello@example.com"
-        />
-      </div>
+      <NavbarLayoutFloatingOverlay
+        navItems={[
+          { name: "Home", id: "/" },
+          { name: "About", id: "#about" },
+          { name: "Contact", id: "#contact" }
+        ]}
+        brandName="billiclipd"
+        button={{
+          text: "Book a Call",          href: "https://calendly.com/ibbiyousuf420/30min"
+        }}
+      />
 
       <div id="hero" data-section="hero">
-        <HeroBillboardDashboard
-          background={{ variant: "radial-gradient" }}
-          tag="Viral Clip Specialist"
-          tagIcon={Sparkles}
+        <HeroSplitKpi
           title="Turn Longform Content Into Viral Clips"
-          description="Turn your podcasts, streams, and long-form videos into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated."
+          description="Expert clip editing services that transform your YouTube videos, podcasts, and streams into viral TikToks, Instagram Reels, and YouTube Shorts. We've generated 10M+ views for creators."
+          background={{ variant: "glowing-orb" }}
+          kpis={[
+            { value: "10M+", label: "Views Generated" },
+            { value: "99.8%", label: "Client Satisfaction" },
+            { value: "3-5 Days", label: "Turnaround Time" }
+          ]}
+          enableKpiAnimation={true}
           buttons={[
-            { text: "Book a Call", href: "/contact" },
-            { text: "View Portfolio", href: "#features" },
+            {
+              text: "Book a Call",              href: "https://calendly.com/ibbiyousuf420/30min"
+            }
           ]}
-          dashboard={{
-            title: "Clip Analytics Hub",            logoIcon: Hexagon,
-            imageSrc: "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?w=100&h=100&fit=crop&crop=face",            buttons: [
-              { text: "Dashboard", href: "#" },
-              { text: "Export CSV", href: "#" },
-            ],
-            sidebarItems: [
-              { icon: House, active: true },
-              { icon: MessageSquareText },
-              { icon: Settings },
-            ],
-            stats: [
-              {
-                title: "Clips Created",                values: [1240, 1856, 2130],
-                description: "Total viral clips."
-              },
-              {
-                title: "Total Views",                values: [10240000, 12500000, 13450000],
-                valuePrefix: "",                valueSuffix: "M+",                description: "Across all platforms."
-              },
-              {
-                title: "Engagement Rate",                values: [8.5, 12.3, 15.7],
-                valueSuffix: "%",                description: "Average engagement."
-              },
-            ],
-            chartTitle: "Views Over Time",            chartData: [
-              { value: 50 },
-              { value: 30 },
-              { value: 70 },
-              { value: 40 },
-              { value: 90 },
-            ],
-            listTitle: "Recent Clips",            listItems: [
-              {
-                icon: CircleDollarSign,
-                title: "5-Sec Motivational",                status: "Published"
-              },
-              {
-                icon: ArrowLeftRight,
-                title: "3-Min Podcast Clip",                status: "Processing"
-              },
-              {
-                icon: Send,
-                title: "Highlight Reel",                status: "Published"
-              },
-            ],
-          }}
-        />
-      </div>
-
-      <div id="features" data-section="features">
-        <FeatureCardEight
-          features={[
-            {
-              id: 1,
-              title: "Content Analysis",              description: "We analyze your longform content to identify the most viral moments and trending hooks.",              imageSrc: "https://images.unsplash.com/photo-1611532736597-de2d4265fba3?w=500&h=300&fit=crop"
-            },
-            {
-              id: 2,
-              title: "Professional Editing",              description: "Our expert editors craft high-quality clips optimized for each platform's unique algorithm.",              imageSrc: "https://images.unsplash.com/photo-1598899134739-24c46f58b8c0?w=500&h=300&fit=crop"
-            },
-            {
-              id: 3,
-              title: "Multi-Platform Optimization",              description: "Each clip is tailored for TikTok, Instagram Reels, and YouTube Shorts with proper formatting.",              imageSrc: "https://images.unsplash.com/photo-1611339555312-e607c90352fd?w=500&h=300&fit=crop"
-            },
-            {
-              id: 4,
-              title: "Performance Analytics",              description: "Track engagement metrics, reach, and performance across all platforms in real-time.",              imageSrc: "https://images.unsplash.com/photo-1460925895917-aeb19be489c7?w=500&h=300&fit=crop"
-            },
-          ]}
-          title="Our Process"
-          description="How we transform your content into viral sensations"
-          tag="What We Do"
-          textboxLayout="default"
-          useInvertedBackground={false}
+          imageSrc="/hero-image.jpg"
+          imageAlt="Viral clips showcase"
+          mediaAnimation="slide-up"
+          imagePosition="right"
         />
       </div>
 
       <div id="about" data-section="about">
-        <TextSplitAbout
-          title="Why Choose billiclipd?"
-          description={[
-            "With over 10 million views generated across TikTok, Instagram Reels, and YouTube Shorts, we know what makes content go viral. Our team combines data-driven insights with creative excellence to transform your longform content into short-form sensations.",            "We don't just edit clips—we create content strategies that maximize your reach and engagement on every platform."
-          ]}
-          buttons={[
-            { text: "Book a Call", href: "/contact" },
-            { text: "Learn More", href: "#features" },
-          ]}
+        <SplitAbout
+          title="About Our Clipping Service"
+          description="We specialize in transforming long-form content into short, shareable clips optimized for viral growth across all platforms."
+          textboxLayout="default"
           useInvertedBackground={false}
+          bulletPoints={[
+            {
+              title: "Expert Editing",              description: "Our team uses advanced editing techniques to create engaging, fast-paced clips that capture attention."
+            },
+            {
+              title: "Multi-Platform Optimization",              description: "Every clip is tailored for TikTok, Instagram Reels, YouTube Shorts, and more with the right aspect ratios and formats."
+            },
+            {
+              title: "Quick Turnaround",              description: "Get your clips back in 3-5 business days, ready to boost your growth immediately."
+            }
+          ]}
+          imageSrc="/about-image.jpg"
+          imageAlt="Clipping service in action"
+          mediaAnimation="slide-up"
+          imagePosition="right"
+          buttons={[
+            {
+              text: "Book a Call",              href: "https://calendly.com/ibbiyousuf420/30min"
+            }
+          ]}
         />
       </div>
 
       <div id="contact" data-section="contact">
-        <ContactCenter
-          tag="Get Started"
-          title="Ready to Go Viral?"
-          description="Let's transform your content into clips that generate millions of views. Book a call with our team to discuss your project."
-          background={{ variant: "radial-gradient" }}
+        <ContactFaq
+          faqs={[
+            {
+              id: "1",              title: "What's your turnaround time?",              content: "We typically deliver clips within 3-5 business days. Rush orders available upon request."
+            },
+            {
+              id: "2",              title: "How many clips do you produce per project?",              content: "We create multiple clips from your source material, ensuring you get maximum content to distribute across platforms."
+            },
+            {
+              id: "3",              title: "Do you handle different video formats?",              content: "Yes! We work with YouTube videos, podcasts, streams, and any long-form content. We optimize for all major platforms."
+            },
+            {
+              id: "4",              title: "What's your pricing?",              content: "Pricing varies based on video length and clip quantity. Book a call to discuss your specific needs and get a custom quote."
+            }
+          ]}
+          ctaTitle="Ready to Go Viral?"
+          ctaDescription="Let's discuss how we can help you maximize your content's reach."
+          ctaButton={{
+            text: "Book a Free Call",            href: "https://calendly.com/ibbiyousuf420/30min"
+          }}
+          ctaIcon={Phone}
           useInvertedBackground={false}
-          buttonText="Book a Call"
-          onSubmit={(email) => console.log("Email:", email)}
+          animationType="slide-up"
         />
       </div>
 
-      <FooterCard
-        logoText="billiclipd"
-        copyrightText="© 2025 | billiclipd. All rights reserved."
-        socialLinks={[
+      <FooterBase
+        columns={[
           {
-            icon: Twitter,
-            href: "https://twitter.com/billiclipd",            ariaLabel: "Twitter"
+            title: "Product",            items: [
+              { label: "Clip Editing", href: "#hero" },
+              { label: "About Us", href: "#about" },
+              { label: "Contact", href: "#contact" }
+            ]
           },
           {
-            icon: Linkedin,
-            href: "https://linkedin.com/company/billiclipd",            ariaLabel: "LinkedIn"
-          },
+            title: "Legal",            items: [
+              { label: "Privacy Policy", href: "#" },
+              { label: "Terms of Service", href: "#" }
+            ]
+          }
         ]}
+        logoText="billiclipd"
+        copyrightText="© 2025 | billiclipd"
       />
     </ThemeProvider>
   );
