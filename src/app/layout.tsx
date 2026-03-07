@@ -20,19 +20,19 @@ const publicSans = Public_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "Shortform Content Clipping & Viral Growth | Clipping Culture",  description: "Transform your longform content into viral shortform clips. 10B+ views generated. TikTok, Reels, Shorts optimization. Proven methodology for organic creator growth.",  keywords: "shortform content clipping, TikTok clips, viral growth, content repurposing, Instagram Reels, YouTube Shorts",  metadataBase: new URL("https://clippingculture.com"),
+  title: "Private Clipping Services & Team Management | billiclipd",  description: "Transform your longform content into viral shortform clips with personalized team management. 10B+ views generated. TikTok, Reels, Shorts optimization with direct collaboration.",  keywords: "private clipping services, TikTok clips, viral growth, content repurposing, Instagram Reels, YouTube Shorts, dedicated team",  metadataBase: new URL("https://billiclipd.com"),
   alternates: {
-    canonical: "https://clippingculture.com"
+    canonical: "https://billiclipd.com"
   },
   openGraph: {
-    title: "Turn Longform Into Viral Clips | Clipping Culture",    description: "I transform your best podcast, stream, and video moments into high-retention shortform content optimized for TikTok, Instagram Reels, and YouTube Shorts.",    url: "https://clippingculture.com",    siteName: "Clipping Culture",    type: "website",    images: [
+    title: "Private Clipping & Team Management | billiclipd",    description: "I transform your best podcast, stream, and video moments into high-retention shortform content with personalized team management.",    url: "https://billiclipd.com",    siteName: "billiclipd",    type: "website",    images: [
       {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",        alt: "Clipping Culture viral shortform content"
+        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",        alt: "billiclipd private clipping service"
       },
     ],
   },
   twitter: {
-    card: "summary_large_image",    title: "Turn Longform Into Viral Clips",    description: "10B+ views generated. Transform your content into trending shortform clips.",    images: [
+    card: "summary_large_image",    title: "Private Clipping & Team Management",    description: "10B+ views generated. Transform your content with personalized team collaboration.",    images: [
       "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png"
     ],
   },
