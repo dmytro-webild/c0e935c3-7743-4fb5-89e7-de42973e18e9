@@ -63,11 +63,11 @@ export default function LandingPage() {
           background={{ variant: "glowing-orb" }}
           leftCarouselItems={[
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",              imageAlt: "TikTok viral clip example"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png?_wi=1",              imageAlt: "TikTok viral clip example"},
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png",              imageAlt: "Professional editing dashboard"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png?_wi=1",              imageAlt: "Professional editing dashboard"},
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png",              imageAlt: "Instagram Reels clip"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png?_wi=1",              imageAlt: "Instagram Reels clip"},
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-youtube-shorts-vertical-video-frame-sh-1772847774790-1b515168.png",              imageAlt: "YouTube Shorts content"},
           ]}
@@ -75,11 +75,11 @@ export default function LandingPage() {
             {
               imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-dynamic-montage-of-multiple-trending-t-1772847775452-15beec39.png",              imageAlt: "Trending clips montage"},
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png",              imageAlt: "Editing interface"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-shortform-content-editing-1772847775290-e59e3951.png?_wi=2",              imageAlt: "Editing interface"},
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",              imageAlt: "Viral content creation"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png?_wi=2",              imageAlt: "Viral content creation"},
             {
-              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png",              imageAlt: "Social media optimization"},
+              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-instagram-reels-frame-showing-a-profe-1772847775330-4952935d.png?_wi=2",              imageAlt: "Social media optimization"},
           ]}
           carouselPosition="right"
           buttons={[
@@ -167,13 +167,13 @@ export default function LandingPage() {
           useInvertedBackground={false}
           products={[
             {
-              id: "bbno",              name: "BBNO$ - Music Artist",              price: "16.5M",              variant: "Listeners | Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png",              imageAlt: "BBNO$ campaign case study"},
+              id: "bbno",              name: "BBNO$ - Music Artist",              price: "16.5M",              variant: "Listeners | Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=1",              imageAlt: "BBNO$ campaign case study"},
             {
               id: "dhar-mann",              name: "Dhar Mann - Influencer",              price: "136M",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-influencer-case-study-sho-1772847776930-7a6e87b3.png",              imageAlt: "Dhar Mann case study"},
             {
               id: "paul-american",              name: "Paul American - TV Show",              price: "140M",              variant: "Followers | Entertainment Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-television-show-case-study-with-140m-f-1772847781498-064f7d24.png",              imageAlt: "Paul American case study"},
             {
-              id: "tate-mccrae",              name: "Tate McCrae - Artist",              price: "57.6M",              variant: "Listeners | Music Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png",              imageAlt: "Tate McCrae campaign"},
+              id: "tate-mccrae",              name: "Tate McCrae - Artist",              price: "57.6M",              variant: "Listeners | Music Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=2",              imageAlt: "Tate McCrae campaign"},
           ]}
           gridVariant="uniform-all-items-equal"
           animationType="slide-up"
@@ -202,7 +202,7 @@ export default function LandingPage() {
           useInvertedBackground={false}
           testimonials={[
             {
-              id: "1",              name: "Alex Rivera",              role: "Podcast Host",              testimonial: "Within 2 weeks of launching my clipping campaign, my podcast downloads tripled. The viral clips on TikTok and Instagram are driving real listeners to my full episodes. Best investment I've made.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png",              imageAlt: "Alex Rivera podcast host"},
+              id: "1",              name: "Alex Rivera",              role: "Podcast Host",              testimonial: "Within 2 weeks of launching my clipping campaign, my podcast downloads tripled. The viral clips on TikTok and Instagram are driving real listeners to my full episodes. Best investment I've made.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=1",              imageAlt: "Alex Rivera podcast host"},
             {
               id: "2",              name: "Jordan Chen",              role: "Brand Marketing Director",              testimonial: "We tried traditional agencies for months with minimal results. Clipping Culture delivered 25M views in the first month—all organic, zero ad spend. The transparency and speed are unmatched.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-marke-1772847774096-d4ca7a22.png",              imageAlt: "Jordan Chen brand director"},
             {
@@ -212,7 +212,7 @@ export default function LandingPage() {
             {
               id: "5",              name: "David Lee",              role: "Startup CEO",              testimonial: "Our product launch videos became trending clips within days. The organic reach we got from Clipping Culture's network was worth 10x the investment in traditional advertising.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-repre-1772847774538-779f0ff6.png",              imageAlt: "David Lee startup CEO"},
             {
-              id: "6",              name: "Emma Watson",              role: "Influencer",              testimonial: "Clear metrics, real-time updates, and clips that actually trend. This is how modern content distribution should work. No fluff, just results.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png",              imageAlt: "Emma Watson influencer"},
+              id: "6",              name: "Emma Watson",              role: "Influencer",              testimonial: "Clear metrics, real-time updates, and clips that actually trend. This is how modern content distribution should work. No fluff, just results.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=2",              imageAlt: "Emma Watson influencer"},
           ]}
           animationType="slide-up"
         />
