@@ -1,6 +1,6 @@
 "use client";
 
-import { ThemeProvider } from "@/components/theme/ThemeProvider";
+import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
 import NavbarLayoutFloatingOverlay from "@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay";
 import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
 import SplitAbout from "@/components/sections/about/SplitAbout";
@@ -22,17 +22,19 @@ export default function Page() {
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
-      <NavbarLayoutFloatingOverlay
-        navItems={[
-          { name: "Home", id: "/" },
-          { name: "About", id: "#about" },
-          { name: "Contact", id: "#contact" }
-        ]}
-        brandName="billiclipd"
-        button={{
-          text: "Book a Call",          href: "https://calendly.com/ibbiyousuf420/30min"
-        }}
-      />
+      <div id="nav" data-section="nav">
+        <NavbarLayoutFloatingOverlay
+          navItems={[
+            { name: "Home", id: "/" },
+            { name: "About", id: "#about" },
+            { name: "Contact", id: "#contact" }
+          ]}
+          brandName="billiclipd"
+          button={{
+            text: "Book a Call",            href: "https://calendly.com/ibbiyousuf420/30min"
+          }}
+        />
+      </div>
 
       <div id="hero" data-section="hero">
         <HeroSplitKpi
