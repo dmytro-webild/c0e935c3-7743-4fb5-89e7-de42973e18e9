@@ -96,7 +96,7 @@ export default function LandingPage() {
       <div id="social-proof" data-section="social-proof">
         <SocialProofOne
           title="Trusted by Top Creators and Brands"
-          description="Over 10M+ views generated. I've powered viral campaigns for artists, influencers, TV shows, and products reaching hundreds of millions of followers."
+          description="Over 10M+ views generated. I've powered viral content for artists, influencers, TV shows, and products reaching hundreds of millions of followers."
           tag="10M+ Views Generated"
           tagIcon={TrendingUp}
           tagAnimation="slide-up"
@@ -113,7 +113,7 @@ export default function LandingPage() {
       <div id="process" data-section="process">
         <FeatureCardSix
           title="The Process"
-          description="Launching a campaign has never been easier. Say goodbye to slow agencies—with my clipping methodology, you launch, scale, and analyze viral campaigns in record time."
+          description="Launching your private clipping project has never been easier. Say goodbye to slow agencies—with my personalized clipping methodology, you launch, scale, and analyze viral content in record time with direct team access."
           tag="Proven Workflow"
           tagIcon={Zap}
           tagAnimation="slide-up"
@@ -122,15 +122,15 @@ export default function LandingPage() {
           features={[
             {
               id: 1,
-              title: "Step #1",              description: "Book an Intro CallWe start with a quick intro call to understand your goals, target audience, and creative direction. From there, our team builds a custom clipping campaign designed to maximize reach and engagement — whether you’re a brand, artist, creator, or product. ",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-a-consultation-v-1772847774769-61fe5500.png",              imageAlt: "Consultation call strategy planning",              buttons: [{ text: "Start Your Campaign", href: "https://calendly.com" }],
+              title: "Step #1",              description: "Book an Intro Call. We start with a quick intro call to understand your goals, target audience, and creative direction. From there, my team builds a custom private clipping project designed to maximize reach and engagement — whether you're a brand, artist, creator, or product.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-a-consultation-v-1772847774769-61fe5500.png",              imageAlt: "Consultation call strategy planning",              buttons: [{ text: "Start Your Project", href: "https://calendly.com" }],
             },
             {
               id: 2,
-              title: "Our team Starts posting  ",              description: "Once the deal is locked, Content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"
+              title: "Our Team Starts Posting",              description: "Once we align on strategy, personalized content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques. Direct team management ensures every clip reflects your brand's vision.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"
             },
             {
               id: 3,
-              title: "Track Real-Time Results",              description: "Watch your clips climb trending charts in real-time. Full transparency with detailed analytics showing views, engagement, growth metrics, and ROI. Optimize on the fly based on what's working.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-analytics-dashboard-showing-real-time-1772847775477-be40e150.png",              imageAlt: "Analytics dashboard real-time metrics"
+              title: "Track Real-Time Results",              description: "Watch your clips climb trending charts in real-time. Full transparency with detailed analytics showing views, engagement, growth metrics, and ROI. Optimize on the fly based on what's working with direct collaboration and personalized guidance.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-analytics-dashboard-showing-real-time-1772847775477-be40e150.png",              imageAlt: "Analytics dashboard real-time metrics"
             },
           ]}
         />
@@ -139,7 +139,7 @@ export default function LandingPage() {
       <div id="metrics" data-section="metrics">
         <MetricCardOne
           title="Measurable Results That Speak"
-          description="Track the impact of your clipping campaigns with clear, actionable metrics."
+          description="Track the impact of your private clipping projects with clear, actionable metrics from our dedicated team."
           tag="Performance Metrics"
           tagIcon={BarChart3}
           tagAnimation="slide-up"
@@ -147,10 +147,10 @@ export default function LandingPage() {
           useInvertedBackground={false}
           metrics={[
             {
-              id: "1",              value: "10M ",              title: "Views Generated",              description: "Average Views per client",              icon: Eye,
+              id: "1",              value: "10M ",              title: "Views Generated",              description: "Average Views per private project",              icon: Eye,
             },
             {
-              id: "2",              value: "1000 ",              title: "Clipper Network",              description: "We have more than 1000 Clippers Waiting",              icon: Users,
+              id: "2",              value: "1000 ",              title: "Expert Team",              description: "Dedicated clipping specialists for your projects",              icon: Users,
             },
             {
               id: "3",              value: "💯 ",              title: "Organic Growth",              description: "Zero ad spend required—pure algorithmic reach",              icon: TrendingUp,
@@ -167,23 +167,23 @@ export default function LandingPage() {
       <div id="case-studies" data-section="case-studies">
         <ProductCardFour
           title="Client Success Stories"
-          description="From independent creators to global brands—here's the impact of optimized clipping campaigns."
+          description="From independent creators to global brands—here's the impact of our personalized clipping and team management approach."
           tag="Proven Results"
           tagIcon={Trophy}
           textboxLayout="default"
           useInvertedBackground={false}
           products={[
             {
-              id: "bbno",              name: "Ericcouu -  influencer ",              price: "",              variant: "Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-h65hjshx.jpg",              imageAlt: "BBNO$ campaign case study"
+              id: "bbno",              name: "Ericcouu - Influencer",              price: "",              variant: "Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-h65hjshx.jpg",              imageAlt: "Ericcouu success story"
             },
             {
-              id: "dhar-mann",              name: "Brandon Clark- Gym coach",              price: "",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-mr1xedhd.jpg",              imageAlt: "Dhar Mann case study"
+              id: "dhar-mann",              name: "Brandon Clark - Gym Coach",              price: "",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-mr1xedhd.jpg",              imageAlt: "Brandon Clark success story"
             },
             {
-              id: "paul-american",              name: "PB Investing - Trader",              price: "",              variant: "Followers | Trading Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg",              imageAlt: "Paul American case study"
+              id: "paul-american",              name: "PB Investing - Trader",              price: "",              variant: "Followers | Trading Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg",              imageAlt: "PB Investing success story"
             },
             {
-              id: "tate-mccrae",              name: "Sexyishaan -  influencer",              price: "",              variant: "Entertainment ",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-1pjxjkc4.jpg",              imageAlt: "Tate McCrae campaign"
+              id: "tate-mccrae",              name: "Sexyishaan - Influencer",              price: "",              variant: "Entertainment",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-1pjxjkc4.jpg",              imageAlt: "Sexyishaan success story"
             },
           ]}
           gridVariant="uniform-all-items-equal"
@@ -195,7 +195,7 @@ export default function LandingPage() {
         <TextSplitAbout
           title="Why I Do This"
           description={[
-            "I started clipping because I saw creators and brands struggling to repurpose their best content. They were sitting on goldmines—podcasts, streams, videos—but lacked the time, skills, or network to turn them into viral clips.",            "Now, with a network of 40,000+ expert clippers and a proven methodology, I've helped launch campaigns that generated over 10 billion views. No agencies. No gatekeeping. Just results.",            "Every client I work with gets direct access to a team obsessed with viral growth, algorithmic optimization, and transparent metrics. Your success is my success."
+            "I started private clipping work because I saw creators and brands struggling to repurpose their best content. They were sitting on goldmines—podcasts, streams, videos—but lacked the time, skills, or network to turn them into viral clips.",            "Now, with a dedicated team of expert clippers and a proven personalized methodology, I've helped launch private projects that generated over 10 billion views. No agencies. No gatekeeping. Just direct collaboration and results.",            "Every client I work with gets direct access to a team obsessed with viral growth, algorithmic optimization, and transparent metrics. Your success is my success, and my team is committed to your project's unique vision."
           ]}
           useInvertedBackground={false}
           showBorder={false}
@@ -206,7 +206,7 @@ export default function LandingPage() {
       <div id="testimonials" data-section="testimonials">
         <TestimonialCardTwo
           title="What Clients Say"
-          description="Real feedback from creators and brands who've experienced the impact of optimized shortform campaigns."
+          description="Real feedback from creators and brands who've experienced the impact of our personalized clipping services and dedicated team management."
           tag="Client Testimonials"
           tagIcon={MessageSquare}
           tagAnimation="slide-up"
@@ -214,22 +214,22 @@ export default function LandingPage() {
           useInvertedBackground={false}
           testimonials={[
             {
-              id: "1",              name: "Alex Rivera",              role: "Podcast Host",              testimonial: "Within 2 weeks of launching my clipping campaign, my podcast downloads tripled. The viral clips on TikTok and Instagram are driving real listeners to my full episodes. Best investment I've made.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=1",              imageAlt: "Alex Rivera podcast host"
+              id: "1",              name: "Alex Rivera",              role: "Podcast Host",              testimonial: "Within 2 weeks of launching my private clipping project, my podcast downloads tripled. The dedicated team handling my clips on TikTok and Instagram are driving real listeners to my full episodes. Best investment I've made.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=1",              imageAlt: "Alex Rivera podcast host"
             },
             {
-              id: "2",              name: "Jordan Chen",              role: "Brand Marketing Director",              testimonial: "We tried traditional agencies for months with minimal results. Clipping Culture delivered 25M views in the first month—all organic, zero ad spend. The transparency and speed are unmatched.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-marke-1772847774096-d4ca7a22.png",              imageAlt: "Jordan Chen brand director"
+              id: "2",              name: "Jordan Chen",              role: "Brand Marketing Director",              testimonial: "We tried traditional agencies for months with minimal results. The personalized clipping team delivered 25M views in the first month—all organic, zero ad spend. The transparency and direct collaboration are unmatched.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-marke-1772847774096-d4ca7a22.png",              imageAlt: "Jordan Chen brand director"
             },
             {
-              id: "3",              name: "Sam Thompson",              role: "Content Creator",              testimonial: "I was drowning in content repurposing. Having a team of clippers handle it freed me up to focus on creating. My viral clips are now my #1 lead source for brand deals.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-social-medi-1772847774170-c3d5b803.png",              imageAlt: "Sam Thompson content creator"
+              id: "3",              name: "Sam Thompson",              role: "Content Creator",              testimonial: "I was drowning in content repurposing. Having a dedicated team handle my clipping project freed me up to focus on creating. My personalized clips are now my #1 lead source for brand deals.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-social-medi-1772847774170-c3d5b803.png",              imageAlt: "Sam Thompson content creator"
             },
             {
-              id: "4",              name: "Maya Patel",              role: "Music Producer",              testimonial: "The clipping process was simple and collaborative. My music got in front of millions of new listeners through optimized short-form content. Highly recommend for any artist looking to scale.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-different-c-1772847773694-573d36da.png",              imageAlt: "Maya Patel music producer"
+              id: "4",              name: "Maya Patel",              role: "Music Producer",              testimonial: "The personalized clipping process was simple and collaborative. My music got in front of millions of new listeners through optimized short-form content managed directly by the team. Highly recommend for any artist looking to scale.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-different-c-1772847773694-573d36da.png",              imageAlt: "Maya Patel music producer"
             },
             {
-              id: "5",              name: "David Lee",              role: "Startup CEO",              testimonial: "Our product launch videos became trending clips within days. The organic reach we got from Clipping Culture's network was worth 10x the investment in traditional advertising.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-repre-1772847774538-779f0ff6.png",              imageAlt: "David Lee startup CEO"
+              id: "5",              name: "David Lee",              role: "Startup CEO",              testimonial: "Our product launch videos became trending clips within days through direct team collaboration. The organic reach we got from the personalized clipping project was worth 10x the investment in traditional advertising.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-brand-repre-1772847774538-779f0ff6.png",              imageAlt: "David Lee startup CEO"
             },
             {
-              id: "6",              name: "Emma Watson",              role: "Influencer",              testimonial: "Clear metrics, real-time updates, and clips that actually trend. This is how modern content distribution should work. No fluff, just results.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=2",              imageAlt: "Emma Watson influencer"
+              id: "6",              name: "Emma Watson",              role: "Influencer",              testimonial: "Clear metrics, real-time updates, and personalized clips that actually trend. Working with a dedicated team instead of agencies is how modern content distribution should work. No fluff, just results.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-headshot-of-a-successful--1772847773799-11aec6b8.png?_wi=2",              imageAlt: "Emma Watson influencer"
             },
           ]}
           animationType="slide-up"
@@ -239,7 +239,7 @@ export default function LandingPage() {
       <div id="faq" data-section="faq">
         <FaqBase
           title="Frequently Asked Questions"
-          description="Everything you need to know before getting started with your clipping campaign."
+          description="Everything you need to know before starting your private clipping project with our dedicated team."
           tag="Help & Support"
           tagIcon={HelpCircle}
           tagAnimation="slide-up"
@@ -247,28 +247,28 @@ export default function LandingPage() {
           useInvertedBackground={false}
           faqs={[
             {
-              id: "1",              title: "What exactly is Clipping Culture?",              content: "Clipping Culture is a shortform content clipping and distribution service. I transform your longform content (podcasts, streams, videos) into high-retention clips optimized for TikTok, Instagram Reels, and YouTube Shorts. I use a network of 40,000+ expert clippers to distribute your content across platforms, driving organic reach and viral growth."
+              id: "1",              title: "What is private clipping collaboration?",              content: "Private clipping collaboration is a personalized shortform content service where you work directly with my dedicated team. I transform your longform content (podcasts, streams, videos) into high-retention clips optimized for TikTok, Instagram Reels, and YouTube Shorts. Unlike traditional agencies, you get direct access to team members who understand your vision and manage every step of the clipping and distribution process."
             },
             {
-              id: "2",              title: "How does the clipping process work?",              content: "Step 1: Book an intro call where we discuss your goals and content strategy. Step 2: Your content gets assigned to our network of clippers who create and optimize clips for each platform. Step 3: Clips launch simultaneously across social platforms and we track real-time performance with detailed analytics."
+              id: "2",              title: "How does the personalized clipping process work?",              content: "Step 1: Book an intro call where we discuss your goals, content strategy, and vision. Step 2: Your content gets assigned to our dedicated team who create and optimize clips for each platform while maintaining direct communication with you. Step 3: Clips launch simultaneously across social platforms and we track real-time performance together with detailed analytics and regular updates."
             },
             {
-              id: "3",              title: "How quickly can I launch a campaign?",              content: "Most campaigns launch within 2-5 business days after the initial strategy call. Your content goes through our optimization process, gets distributed to the clipper network, and begins gaining traction immediately. Real-time results start appearing within hours."
+              id: "3",              title: "How quickly can I launch my private project?",              content: "Most private clipping projects launch within 2-5 business days after the initial strategy call. Your content goes through our personalized optimization process, and begins gaining traction immediately. Real-time results start appearing within hours, with our team providing direct updates on performance."
             },
             {
-              id: "4",              title: "What types of creators and businesses do you work with?",              content: "I work with podcasters, streamers, musicians, influencers, TV shows, brands, product launches, apps, startups, casinos, and content entrepreneurs. Essentially, if you have longform content and want to maximize viral reach through shortform clips, we're a fit."
+              id: "4",              title: "What types of creators and businesses do you work with?",              content: "I work with podcasters, streamers, musicians, influencers, TV shows, brands, product launches, apps, startups, and content entrepreneurs seeking personalized team management. Essentially, if you have longform content and want to maximize viral reach through direct collaboration with expert clippers, we're a fit."
             },
             {
-              id: "5",              title: "Is there a cost to start? What's the pricing model?",              content: "Pricing varies based on your campaign scope, content volume, and distribution network size. I offer custom packages tailored to your goals. Contact me for a consultation and I'll provide transparent pricing with no hidden fees."
+              id: "5",              title: "Is there a cost to start? What's the pricing model?",              content: "Pricing varies based on your project scope, content volume, and dedicated team support level. I offer custom packages tailored to your specific goals and vision. Contact me for a consultation and I'll provide transparent pricing with no hidden fees."
             },
             {
-              id: "6",              title: "How is this different from hiring a video editor?",              content: "I'm not just editing videos—I'm optimizing them for viral growth across platforms. My clipping methodology includes audience research, platform algorithms, trend analysis, optimal timing, and distribution through a massive creator network. It's a complete organic growth system, not just editing."
+              id: "6",              title: "How is this different from hiring a video editor?",              content: "I'm not just editing videos—I'm providing personalized team management and optimization for viral growth across platforms. My private clipping collaboration includes audience research, platform algorithms, trend analysis, optimal timing, direct communication with your dedicated team, and distribution through my network. It's a complete organic growth system with direct collaboration, not just editing."
             },
             {
-              id: "7",              title: "Do I retain ownership of my clips?",              content: "100%. You retain full ownership of all clips created. I handle distribution and optimization, but the content is yours. We simply amplify it through my network to drive maximum views and engagement."
+              id: "7",              title: "Do I retain ownership of my clips?",              content: "100%. You retain full ownership of all clips created through our private collaboration. My team handles creation, optimization, and distribution, but the content is yours. We simply amplify it through our network to drive maximum views and engagement."
             },
             {
-              id: "8",              title: "What kind of results should I expect?",              content: "Results vary based on content quality, audience size, and platform fit. My clients typically see 3-5x ROI within the first month. Many experience viral clips (100K-500K+ views), new followers, lead generation, and increased business opportunities from the exposure."
+              id: "8",              title: "What kind of results should I expect?",              content: "Results vary based on content quality, audience size, and platform fit. My private collaboration clients typically see 3-5x ROI within the first month. Many experience viral clips (100K-500K+ views), new followers, lead generation, and increased business opportunities from the exposure managed by our dedicated team."
             },
           ]}
           faqsAnimation="slide-up"
@@ -278,7 +278,7 @@ export default function LandingPage() {
 
       <div id="contact" data-section="contact">
         <ContactText
-          text="Ready to turn your longform content into viral shortform campaigns? Let's discuss your strategy and explore how I can help you reach millions of engaged viewers—no ad spend required."
+          text="Ready to launch your private clipping project with a dedicated team? Let's discuss your unique vision and explore how direct collaboration can help you reach millions of engaged viewers—no ad spend required."
           animationType="entrance-slide"
           background={{ variant: "radial-gradient" }}
           useInvertedBackground={false}
@@ -291,7 +291,7 @@ export default function LandingPage() {
 
       <div id="footer" data-section="footer">
         <FooterLogoEmphasis
-          logoText="billiclipd  "
+          logoText="billiclipd"
           columns={[
             {
               items: [
