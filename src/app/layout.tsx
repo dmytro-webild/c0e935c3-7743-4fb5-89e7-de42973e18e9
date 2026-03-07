@@ -1,14 +1,8 @@
 import type { Metadata } from "next";
-import { Poppins } from "next/font/google";
-import "./globals.css";
-
-const poppins = Poppins({
-  variable: "--font-poppins",  subsets: ["latin"],
-  weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
-});
+import "./styles/globals.css";
 
 export const metadata: Metadata = {
-  title: "billiclipd | Viral Clip Specialist",  description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated."};
+  title: "billiclipd - Viral Clip Specialist",  description: "Turn Longform Content Into Viral Clips. Expert clipping services that transform your YouTube videos, podcasts, and streams into shareable short-form content."};
 
 export default function RootLayout({
   children,
@@ -16,10 +10,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={`${poppins.variable}`}>
-        {children}
-      
+    <html lang="en">
+      <body>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
