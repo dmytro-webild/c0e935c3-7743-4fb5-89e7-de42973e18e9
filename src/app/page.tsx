@@ -96,8 +96,8 @@ export default function LandingPage() {
       <div id="social-proof" data-section="social-proof">
         <SocialProofOne
           title="Trusted by Top Creators and Brands"
-          description="Over 10B+ views generated. I've powered viral campaigns for artists, influencers, TV shows, and products reaching hundreds of millions of followers."
-          tag="10B+ Views Generated"
+          description="Over 10M+ views generated. I've powered viral campaigns for artists, influencers, TV shows, and products reaching hundreds of millions of followers."
+          tag="10M+ Views Generated"
           tagIcon={TrendingUp}
           tagAnimation="slide-up"
           textboxLayout="default"
@@ -126,7 +126,7 @@ export default function LandingPage() {
             },
             {
               id: 2,
-              title: "Clippers Start Posting",              description: "Once your campaign is locked in, our network springs into action. Content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"
+              title: "Our team Starts posting  ",              description: "Once the deal is locked, Content gets distributed across TikTok, Instagram Reels, YouTube Shorts, and more—simultaneously—with my proven optimization techniques.",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/an-illustration-showing-multiple-clipper-1772847774950-e137f1c3.png",              imageAlt: "Content distribution across platforms"
             },
             {
               id: 3,
@@ -147,13 +147,13 @@ export default function LandingPage() {
           useInvertedBackground={false}
           metrics={[
             {
-              id: "1",              value: "10B",              title: "Views Generated",              description: "Cumulative views across all client campaigns",              icon: Eye,
+              id: "1",              value: "10M ",              title: "Views Generated",              description: "Average Views per client",              icon: Eye,
             },
             {
-              id: "2",              value: "40K",              title: "Clipper Network",              description: "Expert creators in the distribution network",              icon: Users,
+              id: "2",              value: "1000 ",              title: "Clipper Network",              description: "We have more than 1000 Clippers Waiting",              icon: Users,
             },
             {
-              id: "3",              value: "100%",              title: "Organic Growth",              description: "Zero ad spend required—pure algorithmic reach",              icon: TrendingUp,
+              id: "3",              value: "💯 ",              title: "Organic Growth",              description: "Zero ad spend required—pure algorithmic reach",              icon: TrendingUp,
             },
             {
               id: "4",              value: "3-5x",              title: "Avg ROI",              description: "Return on investment vs traditional marketing",              icon: Award,
