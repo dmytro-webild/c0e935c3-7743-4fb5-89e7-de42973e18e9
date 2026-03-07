@@ -177,10 +177,10 @@ export default function LandingPage() {
               id: "bbno",              name: "BBNO$ - Music Artist",              price: "16.5M",              variant: "Listeners | Viral Growth",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=1",              imageAlt: "BBNO$ campaign case study"
             },
             {
-              id: "dhar-mann",              name: "Dhar Mann - Influencer",              price: "136M",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-influencer-case-study-sho-1772847776930-7a6e87b3.png",              imageAlt: "Dhar Mann case study"
+              id: "dhar-mann",              name: "Dhar Mann - Influencer",              price: "136M",              variant: "Followers | Trending Content",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881146961-mr1xedhd.jpg",              imageAlt: "Dhar Mann case study"
             },
             {
-              id: "paul-american",              name: "Paul American - TV Show",              price: "140M",              variant: "Followers | Entertainment Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-television-show-case-study-with-140m-f-1772847781498-064f7d24.png",              imageAlt: "Paul American case study"
+              id: "paul-american",              name: "Paul American - TV Show",              price: "140M",              variant: "Followers | Entertainment Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/uploaded-1772881750051-0ym5nbmx.jpg",              imageAlt: "Paul American case study"
             },
             {
               id: "tate-mccrae",              name: "Tate McCrae - Artist",              price: "57.6M",              variant: "Listeners | Music Clips",              imageSrc: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-professional-case-study-showcase-for-a-1772847776081-4759a6fa.png?_wi=2",              imageAlt: "Tate McCrae campaign"
