@@ -193,9 +193,9 @@ export default function LandingPage() {
 
       <div id="about" data-section="about">
         <TextSplitAbout
-          title="Why I Do This"
+          title="Why you need Clipping"
           description={[
-            "I started private clipping work because I saw creators and brands struggling to repurpose their best content. They were sitting on goldmines—podcasts, streams, videos—but lacked the time, skills, or network to turn them into viral clips.",            "Now, with a dedicated team of expert clippers and a proven personalized methodology, I've helped launch private projects that generated over 10 billion views. No agencies. No gatekeeping. Just direct collaboration and results.",            "Every client I work with gets direct access to a team obsessed with viral growth, algorithmic optimization, and transparent metrics. Your success is my success, and my team is committed to your project's unique vision."
+            "I started private clipping work because I saw creators and brands struggling to repurpose their best content. They were sitting on goldmines—podcasts, streams, videos—but lacked the time, skills, or network to turn them into viral clips.",            "Now, with a dedicated team of expert clippers and a proven personalized methodology, I've helped launch private projects that generated over 10 Million views. No agencies. No gatekeeping. Just direct collaboration and results.",            "Every client I work with gets direct access to a team obsessed with viral growth, algorithmic optimization, and transparent metrics. Your success is my success, and my team is committed to your project's unique vision."
           ]}
           useInvertedBackground={false}
           showBorder={false}
@@ -247,7 +247,7 @@ export default function LandingPage() {
           useInvertedBackground={false}
           faqs={[
             {
-              id: "1",              title: "What is private clipping collaboration?",              content: "Private clipping collaboration is a personalized shortform content service where you work directly with my dedicated team. I transform your longform content (podcasts, streams, videos) into high-retention clips optimized for TikTok, Instagram Reels, and YouTube Shorts. Unlike traditional agencies, you get direct access to team members who understand your vision and manage every step of the clipping and distribution process."
+              id: "1",              title: "Whats Clipping ?",              content: "Clipping is the process of turning long-form content such as podcasts, livestreams, and YouTube videos into short, high-impact clips designed for platforms like TikTok, Instagram Reels, and YouTube Shorts.Through private clipping collaboration, you work directly with my dedicated team to identify the most engaging moments from your content. We then transform those moments into high-retention short-form videos with optimized hooks, captions, and formatting designed to perform well in social media algorithms. "
             },
             {
               id: "2",              title: "How does the personalized clipping process work?",              content: "Step 1: Book an intro call where we discuss your goals, content strategy, and vision. Step 2: Your content gets assigned to our dedicated team who create and optimize clips for each platform while maintaining direct communication with you. Step 3: Clips launch simultaneously across social platforms and we track real-time performance together with detailed analytics and regular updates."
