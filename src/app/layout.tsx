@@ -1,56 +1,30 @@
 import type { Metadata } from "next";
-import { Halant } from "next/font/google";
-import { Inter } from "next/font/google";
-import { Public_Sans } from "next/font/google";
+import { Poppins } from "next/font/google";
 import "./globals.css";
-import { ServiceWrapper } from "@/components/ServiceWrapper";
-import Tag from "@/tag/Tag";
-import { Inter_Tight } from "next/font/google";
+import { ServiceWrapper } from "@/providers/serviceWrapper/ServiceWrapper";
+import { Tag } from "@/components/tag/Tag";
 
-
-
-
-export const metadata: Metadata = {
-  title: "Private Clipping Services & Team Management | billiclipd",  description: "Transform your longform content into viral shortform clips with personalized team management. 10B+ views generated. TikTok, Reels, Shorts optimization with direct collaboration.",  keywords: "private clipping services, TikTok clips, viral growth, content repurposing, Instagram Reels, YouTube Shorts, dedicated team",  metadataBase: new URL("https://billiclipd.com"),
-  alternates: {
-    canonical: "https://billiclipd.com"
-  },
-  openGraph: {
-    title: "Private Clipping & Team Management | billiclipd",    description: "I transform your best podcast, stream, and video moments into high-retention shortform content with personalized team management.",    url: "https://billiclipd.com",    siteName: "billiclipd",    type: "website",    images: [
-      {
-        url: "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png",        alt: "billiclipd private clipping service"
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",    title: "Private Clipping & Team Management",    description: "10B+ views generated. Transform your content with personalized team collaboration.",    images: [
-      "https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png"
-    ],
-  },
-  robots: {
-    index: true,
-    follow: true,
-  },
-};
-
-const interTight = Inter_Tight({
-  variable: "--font-inter-tight",
-  subsets: ["latin"],
+const poppins = Poppins({
+  variable: "--font-poppins",  subsets: ["latin"],
   weight: ["100", "200", "300", "400", "500", "600", "700", "800", "900"],
 });
 
+export const metadata: Metadata = {
+  title: "billiclipd | Viral Clip Specialist",  description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated."};
+
 export default function RootLayout({
   children,
-}: Readonly<{
+}: {
   children: React.ReactNode;
-}>) {
+}) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <ServiceWrapper>
-        <body className={`${interTight.variable} antialiased`}>
+      <body className={`${poppins.variable}`}>
+        <ServiceWrapper>
           <Tag />
           {children}
-        
+        </ServiceWrapper>
+      
         <script
           dangerouslySetInnerHTML={{
             __html: `
@@ -1418,7 +1392,6 @@ export default function RootLayout({
           }}
         />
       </body>
-      </ServiceWrapper>
     </html>
   );
 }
