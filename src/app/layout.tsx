@@ -1,10 +1,5 @@
 import type { Metadata } from "next";
-import "./globals.css";
-import { Inter } from "next/font/google";
-
-const inter = Inter({
-  variable: "--font-inter",  subsets: ["latin"],
-});
+import "./styles/globals.css";
 
 export const metadata: Metadata = {
   title: "billiclipd | Viral Clip Editing Services",  description: "Transform your long-form content into viral clips. Expert editing for TikTok, Instagram Reels, and YouTube Shorts. 10M+ views generated."
@@ -16,23 +11,8 @@ export default function RootLayout({
   children: React.ReactNode;
 }) {
   return (
-    <html lang="en" suppressHydrationWarning>
-      <body className={inter.variable}>
-        {children}
-        <script
-          dangerouslySetInnerHTML={{
-            __html: `
-              try {
-                if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
-                  document.documentElement.classList.add('dark')
-                } else {
-                  document.documentElement.classList.remove('dark')
-                }
-              } catch (e) {}
-            `,
-          }}
-        />
-      
+    <html lang="en">
+      <body>{children}
         <script
           dangerouslySetInnerHTML={{
             __html: `
