@@ -6,7 +6,7 @@ import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
 import SplitAbout from "@/components/sections/about/SplitAbout";
 import ContactFaq from "@/components/sections/contact/ContactFaq";
 import FooterBase from "@/components/sections/footer/FooterBase";
-import { Phone, Users } from "lucide-react";
+import { Phone } from "lucide-react";
 
 export default function Page() {
   return (
@@ -41,9 +41,6 @@ export default function Page() {
           title="Turn Longform Content Into Viral Clips"
           description="Expert clip editing services that transform your YouTube videos, podcasts, and streams into viral TikToks, Instagram Reels, and YouTube Shorts. We've generated 10M+ views for creators."
           background={{ variant: "glowing-orb" }}
-          tag="Trusted by 500+ Creators"
-          tagIcon={Users}
-          tagAnimation="slide-up"
           kpis={[
             { value: "10M+", label: "Views Generated" },
             { value: "99.8%", label: "Client Satisfaction" },
