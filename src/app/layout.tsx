@@ -20,7 +20,7 @@ export default function RootLayout({
       <body className={inter.variable}>
         {children}
         <script
-          dangerously_set_inner_html={{
+          dangerouslySetInnerHTML={{
             __html: `
               try {
                 if (localStorage.getItem('theme') === 'dark' || (!('theme' in localStorage) && window.matchMedia('(prefers-color-scheme: dark)').matches)) {
