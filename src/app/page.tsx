@@ -1,139 +1,180 @@
 "use client";
 
 import { ThemeProvider } from "@/providers/themeProvider/ThemeProvider";
-import NavbarLayoutFloatingOverlay from "@/components/navbar/NavbarLayoutFloatingOverlay/NavbarLayoutFloatingOverlay";
-import HeroSplitKpi from "@/components/sections/hero/HeroSplitKpi";
-import SplitAbout from "@/components/sections/about/SplitAbout";
-import ContactFaq from "@/components/sections/contact/ContactFaq";
-import FooterBase from "@/components/sections/footer/FooterBase";
-import { Phone } from "lucide-react";
+import NavbarStyleApple from "@/components/navbar/NavbarStyleApple/NavbarStyleApple";
+import HeroBillboardCarousel from "@/components/sections/hero/HeroBillboardCarousel";
+import InlineImageSplitTextAbout from "@/components/sections/about/InlineImageSplitTextAbout";
+import FeatureCardTwentyFive from "@/components/sections/feature/FeatureCardTwentyFive";
+import PricingCardThree from "@/components/sections/pricing/PricingCardThree";
+import ContactText from "@/components/sections/contact/ContactText";
+import FooterCard from "@/components/sections/footer/FooterCard";
+import { Sparkles, CheckCircle, MessageCircle, Zap } from "lucide-react";
 
-export default function Page() {
+export default function Home() {
   return (
     <ThemeProvider
       defaultButtonVariant="hover-magnetic"
       defaultTextAnimation="entrance-slide"
       borderRadius="rounded"
-      contentWidth="medium"
-      sizing="medium"
-      background="none"
-      cardStyle="solid"
+      contentWidth="mediumLarge"
+      sizing="largeSmall"
+      background="aurora"
+      cardStyle="glass-elevated"
       primaryButtonStyle="gradient"
       secondaryButtonStyle="glass"
       headingFontWeight="bold"
     >
       <div id="nav" data-section="nav">
-        <NavbarLayoutFloatingOverlay
+        <NavbarStyleApple
           navItems={[
             { name: "Home", id: "/" },
-            { name: "About", id: "#about" },
-            { name: "Contact", id: "#contact" }
+            { name: "About", id: "about" },
+            { name: "Features", id: "features" },
+            { name: "Pricing", id: "pricing" },
+            { name: "Contact", id: "/contact" },
           ]}
           brandName="billiclipd"
-          button={{
-            text: "Book a Call",            href: "https://calendly.com/ibbiyousuf420/30min"
-          }}
         />
       </div>
 
       <div id="hero" data-section="hero">
-        <HeroSplitKpi
+        <HeroBillboardCarousel
+          background={{ variant: "sparkles-gradient" }}
           title="Turn Longform Content Into Viral Clips"
-          description="Expert clip editing services that transform your YouTube videos, podcasts, and streams into viral TikToks, Instagram Reels, and YouTube Shorts. We've generated 10M+ views for creators."
-          background={{ variant: "glowing-orb" }}
-          kpis={[
-            { value: "10M+", label: "Views Generated" },
-            { value: "99.8%", label: "Client Satisfaction" },
-            { value: "3-5 Days", label: "Turnaround Time" }
-          ]}
-          enableKpiAnimation={true}
+          description="Expert clipping services that transform your YouTube videos, podcasts, and streams into shareable short-form content. 10M+ views generated."
+          tag="Viral Clip Specialist"
           buttons={[
-            {
-              text: "Book a Call",              href: "https://calendly.com/ibbiyousuf420/30min"
-            }
+            { text: "Get Started", href: "/contact" },
+            { text: "View Portfolio", href: "features" },
           ]}
-          imageSrc="/hero-image.jpg"
-          imageAlt="Viral clips showcase"
-          mediaAnimation="slide-up"
-          imagePosition="right"
+          mediaItems={[
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=1", imageAlt: "Viral clip example 1" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=2", imageAlt: "Viral clip example 2" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=3", imageAlt: "Viral clip example 3" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=4", imageAlt: "Viral clip example 4" },
+            { imageSrc: "/placeholders/placeholder1.webp?_wi=5", imageAlt: "Viral clip example 5" },
+          ]}
         />
       </div>
 
       <div id="about" data-section="about">
-        <SplitAbout
-          title="About Our Clipping Service"
-          description="We specialize in transforming long-form content into short, shareable clips optimized for viral growth across all platforms."
+        <InlineImageSplitTextAbout
+          heading={[
+            { type: "text", content: "Transform Your Content Into" },
+            { type: "image", src: "/placeholders/placeholder1.webp", alt: "billiclipd logo" },
+            { type: "text", content: "Viral Moments" },
+          ]}
+          useInvertedBackground={false}
+          buttons={[
+            { text: "Learn More", href: "/contact" },
+            { text: "See Examples", href: "features" },
+          ]}
+        />
+      </div>
+
+      <div id="features" data-section="features">
+        <FeatureCardTwentyFive
+          title="Our Clipping Services"
+          description="Professional video editing and content repurposing for maximum reach"
+          tag="What We Do"
+          tagIcon={Zap}
+          features={[
+            {
+              title: "TikTok Optimization",              description: "Perfectly formatted and edited clips for TikTok's viral algorithm",              icon: CheckCircle,
+              mediaItems: [
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=6", imageAlt: "TikTok example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=7", imageAlt: "TikTok example 2" },
+              ],
+            },
+            {
+              title: "Instagram Reels",              description: "Eye-catching vertical videos designed for Instagram engagement",              icon: MessageCircle,
+              mediaItems: [
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=8", imageAlt: "Instagram example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=9", imageAlt: "Instagram example 2" },
+              ],
+            },
+            {
+              title: "YouTube Shorts",              description: "High-quality short-form content for YouTube's growing platform",              icon: Sparkles,
+              mediaItems: [
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=10", imageAlt: "YouTube example 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=11", imageAlt: "YouTube example 2" },
+              ],
+            },
+            {
+              title: "Multi-Platform Distribution",              description: "Strategic repurposing of content across all major social platforms",              icon: Zap,
+              mediaItems: [
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=12", imageAlt: "Multi-platform 1" },
+                { imageSrc: "/placeholders/placeholder1.webp?_wi=13", imageAlt: "Multi-platform 2" },
+              ],
+            },
+          ]}
+          animationType="depth-3d"
           textboxLayout="default"
           useInvertedBackground={false}
-          bulletPoints={[
-            {
-              title: "Expert Editing",              description: "Our team uses advanced editing techniques to create engaging, fast-paced clips that capture attention."
-            },
-            {
-              title: "Multi-Platform Optimization",              description: "Every clip is tailored for TikTok, Instagram Reels, YouTube Shorts, and more with the right aspect ratios and formats."
-            },
-            {
-              title: "Quick Turnaround",              description: "Get your clips back in 3-5 business days, ready to boost your growth immediately."
-            }
-          ]}
-          imageSrc="/about-image.jpg"
-          imageAlt="Clipping service in action"
-          mediaAnimation="slide-up"
-          imagePosition="right"
           buttons={[
-            {
-              text: "Book a Call",              href: "https://calendly.com/ibbiyousuf420/30min"
-            }
+            { text: "View Our Work", href: "/contact" },
           ]}
+        />
+      </div>
+
+      <div id="pricing" data-section="pricing">
+        <PricingCardThree
+          title="Simple, Transparent Pricing"
+          description="Choose the plan that fits your content needs"
+          tag="Pricing"
+          tagIcon={Sparkles}
+          plans={[
+            {
+              id: "1",              price: "$499",              name: "Starter",              buttons: [
+                { text: "Get Started", href: "/contact" },
+                { text: "Chat to Sales", href: "/contact" },
+              ],
+              features: [
+                "Up to 5 viral clips per month",                "TikTok & Instagram optimization",                "Basic editing and effects",                "Email support"],
+            },
+            {
+              id: "2",              badge: "Most Popular",              badgeIcon: Sparkles,
+              price: "$999",              name: "Professional",              buttons: [
+                { text: "Get Started", href: "/contact" },
+                { text: "Chat to Sales", href: "/contact" },
+              ],
+              features: [
+                "Up to 15 viral clips per month",                "All platforms included",                "Advanced editing & custom effects",                "Priority support",                "Performance analytics"],
+            },
+            {
+              id: "3",              price: "$1,999",              name: "Agency",              buttons: [
+                { text: "Get Started", href: "/contact" },
+                { text: "Chat to Sales", href: "/contact" },
+              ],
+              features: [
+                "Unlimited viral clips",                "All platforms + emerging platforms",                "White-label solutions",                "Dedicated account manager",                "Custom strategy & analytics",                "24/7 priority support"],
+            },
+          ]}
+          animationType="slide-up"
+          textboxLayout="default"
+          useInvertedBackground={false}
         />
       </div>
 
       <div id="contact" data-section="contact">
-        <ContactFaq
-          faqs={[
-            {
-              id: "1",              title: "What's your turnaround time?",              content: "We typically deliver clips within 3-5 business days. Rush orders available upon request."
-            },
-            {
-              id: "2",              title: "How many clips do you produce per project?",              content: "We create multiple clips from your source material, ensuring you get maximum content to distribute across platforms."
-            },
-            {
-              id: "3",              title: "Do you handle different video formats?",              content: "Yes! We work with YouTube videos, podcasts, streams, and any long-form content. We optimize for all major platforms."
-            },
-            {
-              id: "4",              title: "What's your pricing?",              content: "Pricing varies based on video length and clip quantity. Book a call to discuss your specific needs and get a custom quote."
-            }
+        <ContactText
+          text="Ready to turn your content into viral sensations? Book a call with our team to discuss your clipping strategy."
+          animationType="entrance-slide"
+          buttons={[
+            { text: "Book a Call", href: "/contact" },
+            { text: "View Portfolio", href: "features" },
           ]}
-          ctaTitle="Ready to Go Viral?"
-          ctaDescription="Let's discuss how we can help you maximize your content's reach."
-          ctaButton={{
-            text: "Book a Free Call",            href: "https://calendly.com/ibbiyousuf420/30min"
-          }}
-          ctaIcon={Phone}
+          background={{ variant: "sparkles-gradient" }}
           useInvertedBackground={false}
-          animationType="slide-up"
         />
       </div>
 
-      <FooterBase
-        columns={[
-          {
-            title: "Product",            items: [
-              { label: "Clip Editing", href: "#hero" },
-              { label: "About Us", href: "#about" },
-              { label: "Contact", href: "#contact" }
-            ]
-          },
-          {
-            title: "Legal",            items: [
-              { label: "Privacy Policy", href: "#" },
-              { label: "Terms of Service", href: "#" }
-            ]
-          }
-        ]}
-        logoText="billiclipd"
-        copyrightText="© 2025 | billiclipd"
-      />
+      <footer>
+        <FooterCard
+          logoText="billiclipd"
+          copyrightText="© 2025 | billiclipd. All rights reserved."
+        />
+      </footer>
     </ThemeProvider>
   );
 }
