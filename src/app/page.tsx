@@ -55,7 +55,7 @@ export default function Page() {
               text: "Book a Call",              href: "https://calendly.com/ibbiyousuf420/30min"
             }
           ]}
-          imageSrc="/hero-image.jpg"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-vibrant-tiktok-style-vertical-video-fr-1772847774345-4bf0afdb.png"
           imageAlt="Viral clips showcase"
           mediaAnimation="slide-up"
           imagePosition="right"
@@ -79,7 +79,7 @@ export default function Page() {
               title: "Quick Turnaround",              description: "Get your clips back in 3-5 business days, ready to boost your growth immediately."
             }
           ]}
-          imageSrc="/about-image.jpg"
+          imageSrc="https://webuild-dev.s3.eu-north-1.amazonaws.com/users/user_3Ab38TzdGBnNuMLrvS5uTUM2zMr/a-dynamic-montage-of-multiple-trending-t-1772847775452-15beec39.png"
           imageAlt="Clipping service in action"
           mediaAnimation="slide-up"
           imagePosition="right"
@@ -135,7 +135,7 @@ export default function Page() {
           }
         ]}
         logoText="billiclipd"
-        copyrightText="© 2025 | billiclipd"
+        copyrightText="Â© 2025 | billiclipd"
       />
     </ThemeProvider>
   );
