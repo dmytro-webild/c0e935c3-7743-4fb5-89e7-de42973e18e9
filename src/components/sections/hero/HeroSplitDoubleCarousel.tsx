@@ -142,7 +142,7 @@ const HeroSplitDoubleCarousel = ({
   );
 
   const carouselContent = (
-    <div className="w-full md:w-1/2 overflow-hidden h-100 md:h-screen py-hero-page-padding" >
+    <div className="w-full md:w-1/2 overflow-hidden h-100 md:h-screen md:py-hero-page-padding" >
       <div
         className={cls(
           "w-full h-full overflow-hidden",
