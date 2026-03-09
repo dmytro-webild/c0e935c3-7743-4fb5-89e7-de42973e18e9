@@ -33,7 +33,7 @@ export default function Home() {
             { name: "Pricing", id: "pricing" },
             { name: "Contact", id: "/contact" },
           ]}
-          brandName="billiclipd"
+          brandName="billiscales 📈"
         />
       </div>
 
