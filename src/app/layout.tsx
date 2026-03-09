@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import "./styles/globals.css";
+import "./globals.css";
 
 export const metadata: Metadata = {
   title: "billiclipd - Viral Clip Specialist",  description: "Turn Longform Content Into Viral Clips. Expert clipping services that transform your YouTube videos, podcasts, and streams into shareable short-form content."};
