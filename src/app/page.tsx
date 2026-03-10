@@ -47,7 +47,7 @@ export default function LandingPage() {
                         { name: "Contact", id: "contact" },
                     ]}
                     button={{
-                        text: "Book A Call",            href: "https://calendly.com"
+                        text: "Book A Call",            href: "https://calendly.com/ibbiyousuf420/30min"
                     }}
                 />
             </div>
@@ -85,7 +85,7 @@ export default function LandingPage() {
                     carouselPosition="right"
                     buttons={[
                         { text: "See My Work", href: "#case-studies" },
-                        { text: "Book A Call", href: "https://calendly.com" },
+                        { text: "Book A Call", href: "https://calendly.com/ibbiyousuf420/30min" },
                     ]}
                     buttonAnimation="slide-up"
                 />
@@ -120,7 +120,7 @@ export default function LandingPage() {
                     features={[
                         {
                             id: 1,
-                            title: "Step #1",              description: "Book an Intro Call. We start with a quick intro call to understand your goals, target audience, and creative direction. From there, my team builds a custom private clipping project designed to maximize reach and engagement — whether you're a brand, artist, creator, or product.",              buttons: [{ text: "Start Your Project", href: "https://calendly.com" }],
+                            title: "Step #1",              description: "Book an Intro Call. We start with a quick intro call to understand your goals, target audience, and creative direction. From there, my team builds a custom private clipping project designed to maximize reach and engagement — whether you're a brand, artist, creator, or product.",              buttons: [{ text: "Start Your Project", href: "https://calendly.com/ibbiyousuf420/30min" }],
                         },
                         {
                             id: 2,
@@ -197,7 +197,7 @@ export default function LandingPage() {
                     ]}
                     useInvertedBackground={false}
                     showBorder={false}
-                    buttons={[{ text: "Schedule Consultation", href: "https://calendly.com" }]}
+                    buttons={[{ text: "Schedule Consultation", href: "https://calendly.com/ibbiyousuf420/30min" }]}
                 />
             </div>
 
@@ -248,7 +248,7 @@ export default function LandingPage() {
                     background={{ variant: "radial-gradient" }}
                     useInvertedBackground={false}
                     buttons={[
-                        { text: "Book A Call", href: "https://calendly.com" },
+                        { text: "Book A Call", href: "https://calendly.com/ibbiyousuf420/30min" },
                         { text: "See Case Studies", href: "#case-studies" },
                     ]}
                 />
@@ -274,7 +274,7 @@ export default function LandingPage() {
                         {
                             items: [
                                 { label: "Contact", href: "#contact" },
-                                { label: "Book A Call", href: "https://calendly.com" },
+                                { label: "Book A Call", href: "https://calendly.com/ibbiyousuf420/30min" },
                                 { label: "Privacy Policy", href: "#" },
                             ],
                         },
