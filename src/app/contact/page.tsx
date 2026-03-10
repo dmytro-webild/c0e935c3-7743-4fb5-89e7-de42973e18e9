@@ -37,7 +37,7 @@ export default function ContactPage() {
           text="Get in touch with our team. We'd love to hear about your content and discuss how we can help you go viral."
           animationType="entrance-slide"
           buttons={[
-            { text: "Schedule a Call", onClick: () => window.open("https://calendly.com/billiclipd", "_blank") },
+            { text: "Schedule a Call", href: "https://calendly.com/ibbiyousuf420/30min" },
             { text: "Back to Home", href: "/" },
           ]}
           background={{ variant: "sparkles-gradient" }}
@@ -91,7 +91,7 @@ export default function ContactPage() {
               </button>
             </form>
             <p className="mt-8 text-center text-sm text-foreground/75">
-              Or schedule a call directly: billing@billiclipd.com
+              Or schedule a call directly: <a href="https://calendly.com/ibbiyousuf420/30min" className="text-primary-cta hover:underline">https://calendly.com/ibbiyousuf420/30min</a>
             </p>
           </div>
         </div>
