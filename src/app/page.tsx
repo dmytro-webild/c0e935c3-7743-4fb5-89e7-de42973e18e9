@@ -41,11 +41,10 @@ export default function LandingPage() {
                 <NavbarLayoutFloatingOverlay
                     brandName="billiclipd"
                     navItems={[
-                        { name: "Home", id: "/" },
                         { name: "Case Studies", id: "case-studies" },
                         { name: "About", id: "about" },
                         { name: "Process", id: "process" },
-                        { name: "Contact", id: "/contact" },
+                        { name: "Contact", id: "contact" },
                     ]}
                     button={{
                         text: "Book A Call",            href: "https://calendly.com/ibbiyousuf420/30min"
