@@ -257,7 +257,7 @@ export default function LandingPage() {
 
             <div id="footer" data-section="footer">
                 <FooterLogoEmphasis
-                    logoText="billiclipd"
+                    logoText=""
                     columns={[
                         {
                             items: [
