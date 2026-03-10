@@ -39,7 +39,7 @@ export default function LandingPage() {
         >
             <div id="nav" data-section="nav">
                 <NavbarLayoutFloatingOverlay
-                    brandName="billiclipd"
+                    brandName="billiscales"
                     navItems={[
                         { name: "Case Studies", id: "case-studies" },
                         { name: "About", id: "about" },
