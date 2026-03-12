@@ -8,7 +8,24 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: "billiscales | Clipper",  description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated."};
+    title: "billiscales | Clipper",
+    description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated.",
+    openGraph: {
+        title: "billiscales | Clipper",
+        description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated.",
+        images: [
+            {
+                url: "/images/porsche.jpg",
+            },
+        ],
+    },
+    twitter: {
+        card: "summary_large_image",
+        title: "billiscales | Clipper",
+        description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated.",
+        images: ["/images/porsche.jpg"],
+    },
+};
 
 export default function RootLayout({
                                        children,
