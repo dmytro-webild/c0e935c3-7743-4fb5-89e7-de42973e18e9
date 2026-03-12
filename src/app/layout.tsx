@@ -8,7 +8,7 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-    title: "billiclipd | Clipper",  description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated."};
+    title: "billiscales | Clipper",  description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated."};
 
 export default function RootLayout({
                                        children,
