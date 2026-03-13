@@ -10,12 +10,15 @@ const poppins = Poppins({
 export const metadata: Metadata = {
     title: "billiscales | Clipper",
     description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated.",
+    metadataBase: new URL("https://www.billiscales.com"),
     openGraph: {
         title: "billiscales | Clipper",
         description: "Turn longform content into viral clips for TikTok, Instagram Reels, and YouTube Shorts. Expert clipping services with 10M+ views generated.",
         images: [
             {
                 url: "/images/porsche.jpg",
+                width: 1200,
+                height: 630,
             },
         ],
     },
